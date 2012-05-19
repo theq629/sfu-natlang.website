@@ -34,9 +34,25 @@ $(function() {
 </script>
 
 <h1>Publications</h1>
-<!-- TODO: links by year -->
-<a href="{{ site.baseurl }}publications">More&hellip;</a>
-<!-- TODO -->
+{% bibliography %}
+<div class="more">
+	<ul class="yearlist">
+	{% for item in bibliography %}
+		{% capture year %}{{ item.issued.date-parts | first | first }}{% endcapture %}
+		{% if year != lastyear %}
+		<li><a href="{{ site.baseurl }}publications#{{ year }}">{{ year }}</a></li>
+		{% assign lastyear = year %}
+		{% endif %}
+	{% endfor %}
+		<li><a href="{{ site.baseurl }}publications">All</a></li>
+	</ul>
+</div>
+<ul>
+	{% for item in bibliography limit: 5 %}
+		<li>{{ item.html }}</li>
+	{% endfor %}
+</ul>
+{% endbibliography %}
 
 <h1>News</h1>
 <div class="more">

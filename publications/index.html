@@ -3,4 +3,25 @@ layout: default
 title: Publications
 ---
 
-TODO
+{% bibliography %}
+<ul class="yearlist">
+	{% for item in bibliography %}
+	{% capture year %}{{ item.issued.date-parts | first | first }}{% endcapture %}
+	{% if year != lastyear %}
+	<li><a href="#{{ year }}">{{ year }}</a></li>
+	{% assign lastyear = year %}
+	{% endif %}
+	{% endfor %}
+</ul>
+{% for item in bibliography %}
+	{% capture year %}{{ item.issued.date-parts | first | first }}{% endcapture %}
+	{% if year != lastyear %}
+	{% if lastyear != nil %}</ul>{% endif %}
+	<h2 id="{{ year }}">{{ year }}</h2>
+	<ul>
+	{% assign lastyear = year %}
+	{% endif %}
+	<li>{{ item.html }}</li>
+{% endfor %}
+</ul>
+{% endbibliography %}

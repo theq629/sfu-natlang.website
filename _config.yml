@@ -2,6 +2,9 @@ baseurl: http://www2.cs.sfu.ca/~mwhitney/personal/test/jekyll/_site/
 permalink: posts/:year-:month-:day-:title
 featured:
         list_file: featured
+bibtex:
+        file: publications.bib
+        skip_keys: url
 default_front_matter:
         ./_posts:
                 layout: post
