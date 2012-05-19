@@ -6,8 +6,8 @@ title:
 <div id="featured" class="carousel">
 	<div class="carousel-inner">
 		{% assign first = true %}
-		{% for post in site.posts %}
-		{% if post.now_featured %}
+		{% featured %}
+		{% for post in featured %}
 		<div class="item{% if first %} active{% endif %}">
 			{% if post.featured_image %}
 			<img src="{{ post.featured_image }}" alt="">
@@ -21,8 +21,8 @@ title:
 			{% endif %}
 			{% assign first = false %}
 		</div>
-		{% endif %}
 		{% endfor %}
+		{% endfeatured %}
 	</div>
 	<a class="carousel-control left" href="#featured" data-slide="prev">&lsaquo;</a>
 	<a class="carousel-control right" href="#featured" data-slide="next">&rsaquo;</a>

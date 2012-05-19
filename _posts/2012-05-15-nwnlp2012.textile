@@ -1,6 +1,7 @@
 ---
 title: Northwest NLP 2012
 featured_text: We went to NW-NLP.
+featured_image: http://www2.fas.sfu.ca/fas/sites/rotating_news/images/photos/rotating_images/tower-of-babel.jpg?max_width=590&width=590&height=243&bottom_stripe=1&left_stripe=1&title=&description=&text_position=left
 ---
 
 We had several items at the Pacific Northwest Regional NLP Workshop this year.

@@ -1,23 +1,26 @@
 #
-# This is a monkey-patched hack to support a list of featured posts.
+# Support for a list of featured posts.
 # A list of post file basenames (with or without the extensions) is read from
-# a file specifed by the 'featured: list_file:' option. Posts may be given
-# 'featured_text' and 'featured_image' variables in front matter. For each
-# post that is in the list_file and has at least one of featured_text or
-# featured_image, post.now_featured will be set to true. post.now_featured
-# will be false for all other posts.
+# a file specifed by a paramter, or if not given then the 'featured: list_file:'
+# configuration option. Posts may be given 'featured_text' and 'featured_image'
+# variables in front matter. Inside the 'featured' liquid block, the variable
+# 'featured' will contain those posts that are in the list and have both
+# variables set.
 #
 
 module Jekyll
-  class Site
-    alias _featured_old_read_posts read_posts
+  class FeaturedBlock < Liquid::Block
+    def initialize(tag_name, param_text, tokens)
+      super
+      @filename = param_text.length > 0 ? param_text.strip : nil
+    end
 
-    attr_reader :featured_list
+    def render(context)
+      site = context['site']
+      posts = site['posts']
 
-    def read_posts(*args)
-      _featured_old_read_posts(*args)
-      filename = File.join(@config['source'], @config['featured']['list_file'])
-      instance_variable_set(:@featured_list,
+      filename = File.join(site['source'], @filename || site['featured']['list_file'])
+      featured_list =
           begin
             File.open(filename) do |file|
               file.readlines.map { |l| l.chomp }
@@ -25,18 +28,17 @@ module Jekyll
           rescue
             []
           end
-        )
-    end
-  end
 
-  class Post
-    alias _featured_old_to_liquid to_liquid
-
-    def to_liquid(*args)
-      data = _featured_old_to_liquid(*args)
-      valid = (@data['featured_text'] != nil or @data['featured_image'] != nil)
-      in_list = (@site.featured_list.include?(@name) or @site.featured_list.include?(File.basename(@name, '.*')))
-      data.merge({ 'now_featured' => (valid and in_list), 'featured_image' => (data['featured_image'] or @site.config['featured']['default_image']) })
+      context['featured'] = posts.select do |post|
+          name = post.instance_variable_get(:@name)
+          in_list = (featured_list.include?(name) or featured_list.include?(File.basename(name, '.*')))
+          has_data = (post.data['featured_text'] != nil and post.data['featured_image'] != nil)
+          $stderr.puts "error: #{name} is in a featured list but does not have the needed front matter variables" if in_list and not has_data
+          in_list and has_data
+        end
+      super
     end
   end
 end
+
+Liquid::Template.register_tag('featured', Jekyll::FeaturedBlock)

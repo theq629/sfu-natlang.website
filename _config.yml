@@ -2,7 +2,6 @@ baseurl: http://www2.cs.sfu.ca/~mwhitney/personal/test/jekyll/_site/
 permalink: posts/:year-:month-:day-:title
 featured:
         list_file: featured
-        default_image: http://www2.fas.sfu.ca/fas/sites/rotating_news/images/photos/rotating_images/tower-of-babel.jpg?max_width=590&width=590&height=243&bottom_stripe=1&left_stripe=1&title=&description=&text_position=left
 default_front_matter:
         ./_posts:
                 layout: post
