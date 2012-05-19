@@ -1,0 +1,36 @@
+blockquote p {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.carousel {
+	max-width: 590px;
+}
+
+.yearlist {
+        text-align: center;
+        display: inline;
+        margin-left: 0;
+        padding-left: 0;
+}
+.yearlist li {
+        list-style-type: none;
+        display: inline;
+        font-size: large;
+        padding-left: 0;
+        padding-right: 0.5em;
+        border-style: none;
+}
+
+.more .yearlist li {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+body p img {
+  padding: 1em;
+}
+
+.pageheader h1 {
+	font-size: 48px;
+}

@@ -1,28 +1,60 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+---
+layout: default
+title: 
+---
 
-<html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>SFU Natural Language Laboratory</title>
-	</head>
-<body>
+<div id="featured" class="carousel">
+	<div class="carousel-inner">
+		{% assign first = true %}
+		{% for post in site.posts %}
+		{% if post.now_featured %}
+		<div class="item{% if first %} active{% endif %}">
+			{% if post.featured_image %}
+			<img src="{{ post.featured_image }}" alt="">
+			{% endif %}
+			{% if post.featured_text %}
+			<div class="carousel-caption">
+				<p>
+				{{ post.featured_text }}
+				</p>
+			</div>
+			{% endif %}
+			{% assign first = false %}
+		</div>
+		{% endif %}
+		{% endfor %}
+	</div>
+	<a class="carousel-control left" href="#featured" data-slide="prev">&lsaquo;</a>
+	<a class="carousel-control right" href="#featured" data-slide="next">&rsaquo;</a>
+</div>
+<script>
+$(function() {
+	$('#featured').carousel('pause');
+});
+</script>
 
-<h1>SFU Natural Language Laboratory</h1>
+<h1>Publications</h1>
+<!-- TODO: links by year -->
+<a href="{{ site.baseurl }}publications">More&hellip;</a>
+<!-- TODO -->
 
-<h2>About</h2>
-
-<p>
-We are the <a href="http://natlang.cs.sfu.ca">Natural Language Laboratory</a> at <a href="http://www.sfu.ca">Simon Fraser University</a> <a href="http://www.cs.sfu.ca">Computing Science</a>.
-</p>
-
-<h2>Software</h2>
-
-<h3 id="yarowsky"><a href="https://github.com/sfu-natlang/yarowsky">yarowsky</a></h3>
-
-<p>
-An implementation of the Yarowsky algorithm and other bootstrapping (self-training) algorithms.
-This software accompanies the paper <a href="http://www.cs.sfu.ca/~anoop/papers/pdf/yarowsky-propagation-acl2012.pdf">Bootstrapping via Graph Propagation</a> by Max Whitney and Anoop Sarkar, which appears in the Proceedings of ACL 2012.
-</p>
-
-</body>
-</html>
+<h1>News</h1>
+<div class="more">
+	<ul class="yearlist">
+	{% for post in site.posts %}
+		{% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+		{% if year != lastyear %}
+		<li><a href="{{ site.baseurl }}news#{{ year }}">{{ year }}</a></li>
+		{% assign lastyear = year %}
+		{% endif %}
+	{% endfor %}
+		<li><a href="{{ site.baseurl }}news">All</a></li>
+	</ul>
+</div>
+{% for post in site.posts limit:5 %}
+<h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | inline_textile }}</a></h2>
+<div class="date">
+	{{ post.date | date_to_string }}
+</div>
+{{ post.content }}
+{% endfor %}

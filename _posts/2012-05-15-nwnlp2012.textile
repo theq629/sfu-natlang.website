@@ -1,0 +1,15 @@
+---
+title: Northwest NLP 2012
+featured_text: We went to NW-NLP.
+---
+
+We had several items at the Pacific Northwest Regional NLP Workshop this year.
+
+Oral presentation:
+* Bootstrapping via Graph Propagation. Max Whitney and Anoop Sarkar. To appear at ACL 2012.
+
+Posters:
+* Improved Reordering for Shallow-n Grammar based Hierarchical Phrase-based Translation. Baskaran Sankaran and Anoop Sarkar. To appear at NAACL 2012.
+* Mixing Multiple Translation Models in Statistical Machine Translation. Majid Razmara, George Foster, Baskaran Sankaran and Anoop Sarkar. To appear at ACL 2012.
+* An Ensemble Model that Combines Syntactic and Semantic Clustering for Discriminative Dependency Parsing. Gholamreza Haffari, Marzieh Razavi and Anoop Sarkar. From ACL 2011.
+* Making the most of a distributed perceptron for NLP. Max Whitney, Ann Clifton, Anoop Sarkar and Alexandra Fedorova.

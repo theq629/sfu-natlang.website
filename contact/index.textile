@@ -1,0 +1,37 @@
+---
+layout: default
+title: Contact
+---
+
+h1. Faculty Members
+
+!(pull-right)http://natlang.cs.sfu.ca/wp-content/uploads/2008/09/tasc1-clerestory-sm.jpg(TASC-1 building interior)!
+
+* "Fred Popowich":http://www.cs.sfu.ca/~popowich. Professor, Computing Science
+* "Anoop Sarkar":http://www.cs.sfu.ca/~anoop. Associate Professor, Computing Science
+
+h1. Mailing Address
+
+Natural Language Lab
+Simon Fraser University
+Technology and Applied Sciences Building: TASC 9404
+8888 University Drive
+Burnaby, B.C. V5A 1S6
+
+h1. Phone Numbers
+
+Lab phone: +1.778.782.3208
+Fax: +1.778.782.3045
+Email: nll-help@sfu.ca
+
+Lab FAX number: +1-778-782-3045
+
+h1. Location
+
+The SFU Natural Language Laboratory and the faculty offices are located on the SFU Burnaby campus in the TASC-1 building (Technology and Science Complex 1), just south of Science Road and north of South Campus Road, east of the South Science Building. The lab is in Suite 9404.
+
+!(pull-right)http://natlang.cs.sfu.ca/wp-content/uploads/2008/09/tasc1fromthestreetsfusere9-150x150.jpg(TASC-1 building street view)!
+
+See "here":http://www.sfu.ca/content/sfu/sub/about/maps-and-directions/burnaby.html for maps and driving and transit instructions. If you come by bus, stay on until the last stop on campus (the Bus Loop next to Lot E in the map). It is a short walk south to TASC-1. If you drive up, you will have to find parking in one of the visitor spots and make your way to the TASC-1 building. The closest visitor parking is Lot VB in the map above.
+
+Fred Popowich’s office number is 9423, on the 2nd floor of the building. Anoop Sarkar’s office number is 9427, on the 2nd floor of the building.

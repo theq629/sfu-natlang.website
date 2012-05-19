@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}bootstrap/css/bootstrap-responsive.css">
+	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}extra.css">
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="{{ site.baseurl }}news.rss">
+
+	<title>{{ page.title }}{% if page.title %} - {% endif %}SFU Natural Language Laboratory</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--
+	TODO: <meta name="description" content="">
+	TODO: <meta name="author" content="">
+	TODO: apple things (see bootstrap examples)?
+	-->
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="navbar">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="brand" href="{{ site.baseurl }}index.html">SFU Natural Language Laboratory</a>
+				<ul class="nav pull-right">
+					<li><a href="{{ site.baseurl }}news.rss">RSS</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span3">
+				Affiliations
+				<ul>
+					<li><a href="http://www.sfu.ca">Simon Fraser University</a></li>
+					<li><a href="http://www.cs.sfu.ca">School of Computing Science</a></li>
+				</ul>
+				Site
+				<ul>
+					<li><a href="{{ site.baseurl }}">Home</a></li>
+					<li><a href="{{ site.baseurl }}about">About</a></li>
+					<li><a href="{{ site.baseurl }}contact">Contact</a></li>
+					<li><a href="{{ site.baseurl }}people">People</a></li>
+					<li><a href="{{ site.baseurl }}publications">Publications</a></li>
+					<li><a href="{{ site.baseurl }}news">News</a></li>
+					<li><a href="{{ site.baseurl }}calendar">Calendar</a></li>
+					<li><a href="{{ site.baseurl }}news.rss">RSS</a></li>
+				</ul>
+				Resources
+				<ul>
+					<li><a href="https://wiki.sfu.ca/research/natlang/index.php/Main_Page">Wiki</a></li>
+					<li><a href="https://wiki.sfu.ca/research/natlang/index.php/FrontPage">Member wiki</a></li>
+					<li><a href="http://www.github.com/sfu-natlang">Github</a></li>
+				</ul>
+			</div>
+
+			<div class="span9">
+				{% if page.title %}
+				<header class="pageheader">
+                                <h1>{{ page.title | inline_textile }}</h1>
+				<hr>
+				</header>
+				{% endif %}
+				{{ content }}
+			</div>
+		</div>
+	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="bootstrap/js/bootstrap.js"></script>
+	<script src="bootstrap/js/bootstrap-carousel.js"></script>
+	<script src="bootstrap/js/bootstrap-transition.js"></script>
+</body>
+</html>

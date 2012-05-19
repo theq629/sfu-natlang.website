@@ -1,0 +1,43 @@
+---
+layout: default
+title: People
+---
+
+h1. Members
+
+h2. Faculty
+
+* "Fred Popowich":http://www.cs.sfu.ca/~popowich
+* "Anoop Sarkar":http://www.cs.sfu.ca/~anoop
+
+h2. Ph.D. Students
+
+* "Ann Clifton":http://www.cs.sfu.ca/~aca69/personal
+* Majid Razmara
+* Baskaran Sankaran
+* "Milan Tofiloski":http://www.cs.sfu.ca/~mta45/personal
+
+h2. Masters Students
+
+* Fahim Hasan
+* Young-chan Kim
+* Marzieh Razavi
+* Asqar Saypil
+* "Max Whitney":http://www.cs.sfu.ca/~mwhitney/personal
+
+h2. Undergraduate Students
+
+* Manaal Faruqui ("MITACS Globalink":http://www.mitacs.ca/main.php?mid=10000426&pid=347)
+* Diptesh Chatterjee ("MITACS Globalink":http://www.mitacs.ca/main.php?mid=10000426&pid=347)
+
+h1. Adjunct Members
+
+h2. SFU Linguistics
+
+* "Chung-hye Han":http://www.sfu.ca/~chunghye/
+* "Paul McFetridge":http://www.sfu.ca/~mcfet/personal/
+* "Maite Taboada":http://www.sfu.ca/~mtaboada/
+
+h2. Students
+
+* Stephen Makonin
