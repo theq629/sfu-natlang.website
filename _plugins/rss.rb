@@ -1,8 +1,8 @@
 #
 # Support for .rss files.
-# This is just the identity converter set to handle .rss files.
 #
 
+# This is just the identity converter set to handle .rss files.
 module Jekyll
   class RssConverter < Converter
     safe true

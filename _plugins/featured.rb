@@ -19,6 +19,7 @@ module Jekyll
       site = context['site']
       posts = site['posts']
 
+      # Get the list of current featured posts as basenames of post files.
       filename = File.join(site['source'], @filename || site['featured']['list_file'])
       featured_list =
           begin
@@ -29,6 +30,8 @@ module Jekyll
             []
           end
 
+      # Make a list of featured posts with the required front matter fields, and
+      # put it in a liquid variable.
       context['featured'] = posts.select do |post|
           name = post.instance_variable_get(:@name)
           in_list = (featured_list.include?(name) or featured_list.include?(File.basename(name, '.*')))

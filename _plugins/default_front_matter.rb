@@ -10,6 +10,7 @@ module Jekyll
   module Convertible
     alias _defaultpostlayout_old_read_yaml read_yaml
 
+    # Monkey-patch the front matter loading code to set the defaults.
     def read_yaml(base, name)
       _defaultpostlayout_old_read_yaml(base, name)
 
