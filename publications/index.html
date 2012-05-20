@@ -18,10 +18,23 @@ title: Publications
 	{% if year != lastyear %}
 	{% if lastyear != nil %}</ul>{% endif %}
 	<h2 id="{{ year }}">{{ year }}</h2>
-	<ul>
+	<ul class="bibliography">
 	{% assign lastyear = year %}
 	{% endif %}
-	<li>{{ item.html }}</li>
+	<li>
+		{{ item.html }}
+		<ul class="publicationlinks">
+		{% if item.url %}
+		<li><a href="{{ item.url }}">URL</a></li>
+		{% endif %}
+		{% if item.pdf %}
+		<li><a href="{{ item.pdf }}">PDF</a></li>
+		{% endif %}
+		{% if item.pageurl %}
+		<li><a href="{{ site.baseurl }}{{ item.pageurl }}">More (Bibtex{% if item.abstract %}, abstract{% endif %})</a></li>
+		{% endif %}
+		</ul>
+	</li>
 {% endfor %}
 </ul>
 {% endbibliography %}

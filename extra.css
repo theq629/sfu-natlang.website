@@ -16,15 +16,18 @@ blockquote p {
 .yearlist li {
         list-style-type: none;
         display: inline;
-        font-size: large;
         padding-left: 0;
         padding-right: 0.5em;
         border-style: none;
 }
 
 .more .yearlist li {
-  font-size: 13px;
-  line-height: 18px;
+	font-size: 13px;
+	line-height: 18px;
+}
+.yearlist li {
+        font-size: 18px;
+	line-height: 24px;
 }
 
 body p img {
@@ -33,4 +36,25 @@ body p img {
 
 .pageheader h1 {
 	font-size: 48px;
+}
+
+.publicationlinks {
+        text-align: center;
+        display: inline;
+        margin-left: 0;
+        padding-left: 0;
+}
+.publicationlinks li {
+        list-style-type: none;
+        display: inline;
+        padding-left: 0;
+        padding-right: 0.2em;
+        border-style: none;
+}
+
+.bibliography .publicationlinks li {
+	font-size: 11px;
+}
+.publicationlinks li {
+        font-size: 18px;
 }

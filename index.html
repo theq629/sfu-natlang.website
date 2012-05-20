@@ -49,7 +49,20 @@ $(function() {
 </div>
 <ul>
 	{% for item in bibliography limit: 5 %}
-		<li>{{ item.html }}</li>
+	<li class="bibliography">
+		{{ item.html }}
+		<ul class="publicationlinks">
+		{% if item.url %}
+		<li><a href="{{ item.url }}">URL</a></li>
+		{% endif %}
+		{% if item.pdf %}
+		<li><a href="{{ item.pdf }}">PDF</a></li>
+		{% endif %}
+		{% if item.pageurl %}
+		<li><a href="{{ item.pageurl }}">More (Bibtex{% if item.abstract %}, abstract{% endif %})</a></li>
+		{% endif %}
+		</ul>
+	</li>
 	{% endfor %}
 </ul>
 {% endbibliography %}

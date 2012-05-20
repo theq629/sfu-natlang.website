@@ -5,6 +5,8 @@ featured:
 bibtex:
         file: publications.bib
         skip_keys: url
+        page_dir: publications
+        page_layout: publication
 default_front_matter:
         ./_posts:
                 layout: post
