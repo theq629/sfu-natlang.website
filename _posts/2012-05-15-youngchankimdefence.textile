@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Young-chan Kim's MSc thesis defence
 ---
 

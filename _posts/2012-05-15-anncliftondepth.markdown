@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Ann Clifton's PhD depth examination
 ---
 

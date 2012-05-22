@@ -9,6 +9,3 @@ bibtex:
   sort_keys: -year order
   page_dir: publications
   page_layout: publication
-default_front_matter:
-  ./_posts:
-    layout: post
