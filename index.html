@@ -59,7 +59,7 @@ $(function() {
 		<li><a href="{{ item.pdf }}">PDF</a></li>
 		{% endif %}
 		{% if item.pageurl %}
-		<li><a href="{{ item.pageurl }}">More (Bibtex{% if item.abstract %}, abstract{% endif %})</a></li>
+		<li><a href="{{ site.baseurl }}{{ item.pageurl }}">More</a> (<a href="{{ site.baseurl }}{{ item.pageurl }}#bibtex">Bibtex</a>{% if item.abstract %}, <a href="{{ site.baseurl }}{{ item.pageurl }}#abstract">abstract</a>{% endif %})</a></li>
 		{% endif %}
 		</ul>
 	</li>
