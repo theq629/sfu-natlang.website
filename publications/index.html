@@ -6,20 +6,18 @@ title: Publications
 {% bibliography %}
 <ul class="yearlist">
 	{% for item in bibliography %}
-	{% capture year %}{{ item.issued.date-parts | first | first }}{% endcapture %}
-	{% if year != lastyear %}
-	<li><a href="#{{ year }}">{{ year }}</a></li>
-	{% assign lastyear = year %}
+	{% if item.year != lastyear %}
+	<li><a href="#{{ item.year }}">{{ item.year }}</a></li>
+	{% assign lastyear = item.year %}
 	{% endif %}
 	{% endfor %}
 </ul>
 {% for item in bibliography %}
-	{% capture year %}{{ item.issued.date-parts | first | first }}{% endcapture %}
-	{% if year != lastyear %}
+	{% if item.year != lastyear %}
 	{% if lastyear != nil %}</ul>{% endif %}
-	<h2 id="{{ year }}">{{ year }}</h2>
+	<h2 id="{{ item.year }}">{{ item.year }}</h2>
 	<ul class="bibliography">
-	{% assign lastyear = year %}
+	{% assign lastyear = item.year %}
 	{% endif %}
 	<li>
 		{{ item.html }}

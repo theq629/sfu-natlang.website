@@ -1,12 +1,14 @@
 baseurl: http://www2.cs.sfu.ca/~mwhitney/personal/test/jekyll/_site/
 permalink: posts/:year-:month-:day-:title
 featured:
-        list_file: featured
+  list_file: featured
 bibtex:
-        file: publications.bib
-        skip_keys: url
-        page_dir: publications
-        page_layout: publication
+  file: publications.bib
+  out_skip_keys: url abstract
+  bibtex_skip_keys: abstract
+  sort_keys: -year order
+  page_dir: publications
+  page_layout: publication
 default_front_matter:
-        ./_posts:
-                layout: post
+  ./_posts:
+    layout: post

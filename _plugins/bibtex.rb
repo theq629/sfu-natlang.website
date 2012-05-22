@@ -18,7 +18,7 @@
 #
 # Properties added to bibtex:
 #   order: the entry index in the input file
-#   date: the date including any components that are available
+#   monthnum: the month as a number
 #   authors: the author string formatted according to the set style
 #   pageurl: the URL of the individial entry page, if there is one
 #
@@ -36,9 +36,9 @@ require 'citeproc'
 
 module Jekyll
   module Bibtex
-    # Sort a list of bib entries in citeproc format with given keys.
-    def self.sort_bib(bib, sort_keys)
-      bib.sort! do |(_, citeproc1), (_, citeproc2)|
+    # Sort a list of bib entries in bibtex format with given keys.
+    def self.sort_bib(bibtex_bib, sort_keys)
+      bibtex_bib.sort! do |bibtex1, bibtex2|
         order = sort_keys.each do |key|
           # Handle the sort order reversal prefix.
           if key[0] == '-' then
@@ -47,10 +47,10 @@ module Jekyll
           else
             dir = 1
           end
-          # Take the values corresponding to the key from each citeproc. If
+          # Take the values corresponding to the key from each entry. If
           # they look like numbers then make them floats.
-          value1, value2 = [citeproc1, citeproc2].map do |citeproc|
-              value = citeproc[key]
+          value1, value2 = [bibtex1, bibtex2].map do |bibtex|
+              value = bibtex[key]
               begin
                 Float(value)
               rescue
@@ -73,27 +73,55 @@ module Jekyll
     end
 
     # Make the basename of a URL for an individual reference page.
-    def self.page_baseurl(citeproc)
-      CGI.escape(citeproc['fileorder'])
+    def self.page_baseurl(bibtex)
+      CGI.escape(bibtex['fileorder'])
     end
 
-    # Augment a citeproc bib entry with extra keys useful for sorting.
-    def self.add_extra_sort_keys(citeproc, cite_style, cite_locale)
-      # It's hard to sort directly on the author information, so we add a
-      # text verson by formatting a cut-down copy of the entry.
-      citeproc['authors'] = CiteProc.process({ 'author' => citeproc['author'] }, :style => cite_style, :locale => cite_locale) if citeproc.include?('author')
-      # This is the date as one property.
-      citeproc['date'] = citeproc['issued']['date-parts'].flatten if citeproc.include?('issued') and citeproc['issued'].include?('date-parts')
+    @month_lookup = { 'jan' => 1, 'feb' => 2, 'mar' => 3, 'apr' => 4, 'may' => 5, 'jun' => 6, 'jul' => 7, 'aug' => 8, 'sep' => 9, 'oct' => 10, 'nov' => 11, 'dec' => 12 }
+
+    def self.month_to_integer(month)
+      @month_lookup[month.downcase] || month
     end
 
     # Remove keys to be skipped in the formatted html reference.
-    def self.remove_skip_keys(citeproc, skip_keys)
+    def self.remove_skip_keys(bibtex, skip_keys)
       skip_keys.each do |key|
-        # Citeproc changes some capitalization, so try everything.
-        citeproc.delete(key)
-        citeproc.delete(key.upcase)
-        citeproc.delete(key.downcase)
+        # We can't be sure of capitalization, so try the major possibilities.
+        bibtex.delete(key)
+        bibtex.delete(key.upcase)
+        bibtex.delete(key.downcase)
       end
+    end
+
+    # Add formatted output to an entry.
+    def self.format_entry(bibtex, out_skip_keys, bibtex_skip_keys, cite_style, cite_locale)
+      html_bibtex = bibtex.dup
+      bibtex_bibtex = bibtex.dup
+      # HTML formatted reference.
+      remove_skip_keys(html_bibtex, out_skip_keys)
+      bibtex['html'] = CiteProc.process(html_bibtex.to_citeproc, :style => cite_style, :locale => cite_locale, :format => 'html')
+      # Filtered bibtex as string.
+      remove_skip_keys(bibtex_bibtex, bibtex_skip_keys)
+      bibtex['bibtex'] = bibtex_bibtex.to_s
+    end
+
+    # Augment an entry with properties useful for sorting and output.
+    def self.augment_entry(i, bibtex, on_default, page_dir, cite_style, cite_locale)
+      bibtex['fileorder'] = i.to_s
+      # Add a URL for the individual reference page if we are using the
+      # default bibliography file (but not otherwise, since we only
+      # generate individual pages from the default bibliography).
+      if on_default and page_dir != nil then
+        bibtex['pageurl'] = File.join(page_dir, page_baseurl(bibtex))
+      end
+      # Strip curly braces off the abstract.
+      bibtex['abstract'] = bibtex['abstract'].gsub(/^{+/, '').gsub(/}+$/, '') if bibtex['abstract'] != nil
+      # It's hard to sort directly on the author information, so we add a
+      # text verson by formatting a cut-down copy of the entry.
+      citeproc = bibtex.to_citeproc
+      bibtex['authors'] = CiteProc.process({ 'author' => citeproc['author'] }, :style => cite_style, :locale => cite_locale) if citeproc['author'] != nil
+      # Numeric month.
+      bibtex['monthnum'] = month_to_integer(bibtex['month'].downcase) if bibtex['month'] != nil
     end
 
     # Cache for loaded bibliographies to avoid repeating parsing and sorting.
@@ -101,55 +129,45 @@ module Jekyll
 
     # Make a list of references for a bibliography.
     def self.make_references(site, source, config, opts={})
-        # Get configuration options.
         cite_style = config['citation_style'] || 'apa'
         cite_locale = config['citation_locale'] || 'en'
-        skip_keys = (config['skip_keys'] || "").split()
-        sort_keys = (config['sort_keys'] || "-date authors title").split()
+        out_skip_keys = (config['out_skip_keys'] || "").split()
+        bibtex_skip_keys = (config['bibtex_skip_keys'] || "").split()
+        sort_keys = (config['sort_keys'] || "-year -monthnum title order").split()
+        page_dir = config['page_dir']
 
-        # Load, parse, and massage the bibligraphy.
-        filename = File.join(source, opts[:filename] || config['file'])
-        if @bib_cache.include?(filename) then
-          bib = @bib_cache[filename]
+        filename = opts[:filename]
+        on_default = false
+        if filename == nil then
+          filename = config['file']
+          on_default = true
+        end
+        filename = File.join(source, filename)
+
+        if @bib_cache.key?(filename) then
+          @bib_cache[filename]
         else
-          bibtex_bib = File.open(filename) { |file| BibTeX.parse(file) }
-          bib = bibtex_bib.map { |bt| [bt, bt.to_citeproc] }
-          bib.each_with_index do |(_, citeproc), i|
-            citeproc['fileorder'] = i.to_s
-            add_extra_sort_keys(citeproc, cite_style, cite_locale)
-            # Add a URL for the individual reference page if we are using the
-            # default bibliography file (but not otherwise, since we only
-            # generate individual pages from the default bibliography).
-            if config.include?('page_dir') and filename == File.join(source, config['file']) then
-              dir = config['page_dir']
-              citeproc['pageurl'] = File.join(dir, page_baseurl(citeproc))
-            end
-            # Strip curly braces off the abstract, since citeproc doesn't seem
-            # to do that.
-            citeproc['abstract'] = citeproc['abstract'].gsub(/^{+/, '').gsub(/}*$/, '') if citeproc.include?('abstract')
+          bib = File.open(filename) { |f| BibTeX.parse(f) }
+          bib = bib.map { |bt| bt } # get a plain list
+          bib.each_with_index do |bibtex, i|
+            format_entry(bibtex, out_skip_keys, bibtex_skip_keys, cite_style, cite_locale)
+            augment_entry(i, bibtex, on_default, page_dir, cite_style, cite_locale)
           end
           sort_bib(bib, sort_keys)
-          @bib_cache[filename]
+          @bib_cache[filename] = bib
+          bib
         end
-
-        # Now we format each bib entry separately.
-        bib.map do |bibtex, citeproc|
-            use_citeproc = citeproc.dup
-            remove_skip_keys(use_citeproc, skip_keys)
-            #$stderr.puts citeproc
-            [bibtex, citeproc, CiteProc.process(use_citeproc, :style => cite_style, :locale => cite_locale, :format => 'html')]
-          end
     end
   end
 
   # This is the type for the objects which will be passed to the liquid
-  # interface. It's just the data from citeproc (with any custom properties
-  # added) plus the formatted html for the reference.
+  # interface. It's just the bibtex that we store, including the extra sort
+  # keys and the formatted output keys.
   class Reference
-    def initialize(citeproc, bibtex, html)
-      @data = citeproc.dup
-      @data['html'] = html
-      @data['bibtex'] = bibtex.to_s
+    def initialize(bibtex)
+      @data = {}
+      # We need to get a hash with string keys.
+      bibtex.each_pair { |k, v| @data[k.to_s] = v }
     end
 
     def to_liquid
@@ -169,24 +187,25 @@ module Jekyll
     def render(context)
       # Make a list of reference objects available as a liquid variable.
       site = context['site']
-      context['bibliography'] = Jekyll::Bibtex.make_references(site, site['source'], site['bibtex'], :filename => @filename).map { |bt, cp, h| Reference.new(cp, bt, h) }
+      context['bibliography'] = Jekyll::Bibtex.make_references(site, site['source'], site['bibtex'], :filename => @filename).map { |bt| Reference.new(bt) }
       super
     end
   end
 
   # Jekyll individual publication page.
   class PublicationPage < Page
-    def initialize(site, dir, layout, bibtex, citeproc, html)
+    def initialize(site, dir, layout, bibtex)
       @site = site
       @base = site.source
-      @dir = File.join(dir, Jekyll::Bibtex.page_baseurl(citeproc))
+      @dir = File.join(dir, Jekyll::Bibtex.page_baseurl(bibtex))
       @name = 'index.html'
 
       process(name)
       read_yaml(File.join(@base, '_layouts'), layout + '.html')
-      data['title'] = "#{citeproc['title']} (#{citeproc['issued']['date-parts'][0][0]})"
+      data['title'] = bibtex['title'] != nil ? "#{bibtex['title']}" : 'Publication'
+      data['title'] += " (#{bibtex['year']})" if bibtex['year'] != nil
       data['layout'] = layout
-      data['publication'] = Reference.new(citeproc, bibtex, html)
+      data['publication'] = Reference.new(bibtex)
     end
   end
 
@@ -199,8 +218,8 @@ module Jekyll
       dir = site.config['bibtex']['page_dir']
       layout = site.config['bibtex']['page_layout']
       if dir != nil and layout != nil then
-        Jekyll::Bibtex.make_references(site, site.source, site.config['bibtex']).each do |bibtex, citeproc, html|
-          page = PublicationPage.new(site, dir, layout, bibtex, citeproc, html)
+        Jekyll::Bibtex.make_references(site, site.source, site.config['bibtex']).each do |bibtex|
+          page = PublicationPage.new(site, dir, layout, bibtex)
           page.render(site.layouts, site.site_payload)
           page.write(site.dest)
           site.pages << page

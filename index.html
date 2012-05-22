@@ -38,10 +38,9 @@ $(function() {
 <div class="more">
 	<ul class="yearlist">
 	{% for item in bibliography %}
-		{% capture year %}{{ item.issued.date-parts | first | first }}{% endcapture %}
-		{% if year != lastyear %}
-		<li><a href="{{ site.baseurl }}publications#{{ year }}">{{ year }}</a></li>
-		{% assign lastyear = year %}
+		{% if item.year != lastyear %}
+		<li><a href="{{ site.baseurl }}publications#{{ item.year }}">{{ item.year }}</a></li>
+		{% assign lastyear = item.year %}
 		{% endif %}
 	{% endfor %}
 		<li><a href="{{ site.baseurl }}publications">All</a></li>
