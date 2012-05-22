@@ -41,3 +41,45 @@ h2. SFU Linguistics
 h2. Students
 
 * Stephen Makonin
+
+h1. Lab Alumnae and Alumni
+
+h2. Ph.D. Students
+
+* Caroline Barrière -- Research Officer, Interactive Language Technologies, NRC Institute for Information Technology
+* Baohua Gu
+* "David Gerhard":http://www2.cs.uregina.ca/~gerhard/ -- Associate Professor, University of Regina
+* "Gholamreza Haffari":http://www.cs.sfu.ca/~ghaffar1/personal -- Postdoc at UBC
+* Eli Hagen
+* Petr Kubon -- Director of Research and Development, Recombo
+* "Yudong Liu":http://www.sfu.ca/~yudongl/
+* T. (Pat) Pattabhiraman -- Senior engineer in computational linguistics, Core Technology Group, Conversay, Redmond, WA
+* "Maxim Roy":http://www.cs.sfu.ca/~maximr/personal/
+* Zhongmin Shi -- CEO, Summba.com
+* "Tomek Strzalkowski":http://www.cs.albany.edu/~tomek/ -- Associate Professor, SUNY Albany
+* "Jörg Überla":http://www.linkedin.com/pub/j%C3%B6rg-%C3%BCberla/0/3a9/286 -- Venture Partner at Wellington Partners
+* Manuel Zahariev -- CTO, Vision Critical
+
+h2. Masters Students
+
+* Julia Birke -- SAP Business Objects
+* Nicolas Demers
+* Cesar Dragunsky
+* Akshay Gattani -- Zeugma Systems
+* Ajeet Grewal -- BC Ferries
+* Mehdi Kashani -- Innovative Information
+* Tomohiko Kimura
+* Sandi Kodric -- Co-Founder of "Vzajemci d.o.o.":http://vzajemci.com/
+* "Fred Kroon":http://www.cs.uwaterloo.ca/~fwkroon/ -- Ph.D. candidate at University of Waterloo
+* Milan Mosny -- President, Response42.com
+* Porus Patell -- Translation Division, SAP
+* Hong Shen -- Microsoft
+* Dong Song -- Accenture
+* Scott Stoness -- Ph.D. candidate at University of Rochester
+* Javier Thaine -- Microsoft
+* Carl Vogel -- Senior Lecturer, Trinity College, Dublin, Ireland
+* Wendy Wang -- Post graduate in information management in health care at Conestoga College
+* "Bruce Wiebe":http://www.twu.ca/academics/faculty/profiles/wiebe-bruce.html -- Instructor in Linguistics at Trinity Western University
+* "Winona Wu":http://www.sfu.ca/~winonaw/ -- SAP Business Objects
+* Yingjian Zhang -- FinancialCAD Corp., BC
+
