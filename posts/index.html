@@ -1,6 +1,6 @@
 ---
 layout: default
-title: News
+title: Posts
 ---
 
 {% assign years = '' %}
@@ -14,7 +14,7 @@ title: News
 {% stringtolist years %}
 	<ul class="yearlist">
 		{% for year in years limit:5 %}
-		<li><a href="{{ site.baseurl }}news#year{{ year }}">{{ year }}</a></li>
+		<li><a href="{{ site.baseurl }}posts#year{{ year }}">{{ year }}</a></li>
 		{% endfor %}
 	</ul>
 {% endstringtolist %}

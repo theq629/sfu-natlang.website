@@ -85,9 +85,9 @@ $(function() {
 	{% stringtolist years %}
 		<ul class="yearlist">
 			{% for year in years limit:5 %}
-			<li><a href="{{ site.baseurl }}news#year{{ year }}">{{ year }}</a></li>
+			<li><a href="{{ site.baseurl }}posts#year{{ year }}">{{ year }}</a></li>
 			{% endfor %}
-			<li><a href="{{ site.baseurl }}news">All</a></li>
+			<li><a href="{{ site.baseurl }}posts">All</a></li>
 		</ul>
 	{% endstringtolist %}
 </div>
