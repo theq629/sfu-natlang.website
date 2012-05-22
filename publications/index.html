@@ -4,14 +4,21 @@ title: Publications
 ---
 
 {% bibliography %}
-<ul class="yearlist">
-	{% for item in bibliography %}
+{% assign years = '' %}
+{% for item in bibliography %}
 	{% if item.year != lastyear %}
-	<li><a href="#{{ item.year }}">{{ item.year }}</a></li>
+	{% capture years %}{{ years | append:' ' | append:item.year }}{% endcapture %}
 	{% assign lastyear = item.year %}
 	{% endif %}
-	{% endfor %}
-</ul>
+{% endfor %}
+{% stringtolist years %}
+	<ul class="yearlist">
+		{% for year in years %}
+		<li><a href="{{ site.baseurl }}publications#{{ year }}">{{ year }}</a></li>
+		{% endfor %}
+	</ul>
+{% endstringtolist %}
+
 {% for item in bibliography %}
 	{% if item.year != lastyear %}
 	{% if lastyear != nil %}</ul>{% endif %}
