@@ -7,7 +7,7 @@ layout: rss
 <item>
 	<title>{% if item.title %}{{ item.title }}{% else %}Publication{% endif %}{% if item.year %} ({{ item.year }}){% endif %}</title>
 	<description>
-	{{ post.html | xml_escape }}
+	{{ item.html | xml_escape }}
 	{% if post.abstract %}{{ post.abstract | xml_escape }}{% endif %}
 	</description>
 	<guid>{{ site.baseurl }}{{ item.pageurl }}</guid>
