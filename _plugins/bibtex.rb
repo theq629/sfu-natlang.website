@@ -74,7 +74,7 @@ module Jekyll
 
     # Make the basename of a URL for an individual reference page.
     def self.page_baseurl(bibtex)
-      CGI.escape(bibtex['fileorder'])
+      CGI.escape(bibtex.key.gsub(':', '-'))
     end
 
     @month_lookup = { 'jan' => 1, 'feb' => 2, 'mar' => 3, 'apr' => 4, 'may' => 5, 'jun' => 6, 'jul' => 7, 'aug' => 8, 'sep' => 9, 'oct' => 10, 'nov' => 11, 'dec' => 12 }
