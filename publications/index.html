@@ -14,15 +14,16 @@ title: Publications
 {% stringtolist years %}
 	<ul class="yearlist">
 		{% for year in years %}
-		<li><a href="{{ site.baseurl }}publications#{{ year }}">{{ year }}</a></li>
+		<li><a href="{{ site.baseurl }}publications#year{{ year }}">{{ year }}</a></li>
 		{% endfor %}
 	</ul>
 {% endstringtolist %}
 
+{% assign lastyear = nil %}
 {% for item in bibliography %}
 	{% if item.year != lastyear %}
 	{% if lastyear != nil %}</ul>{% endif %}
-	<h2 id="{{ item.year }}">{{ item.year }}</h2>
+	<h2 id="year{{ item.year }}">{{ item.year }}</h2>
 	<ul class="bibliography">
 	{% assign lastyear = item.year %}
 	{% endif %}
@@ -36,7 +37,7 @@ title: Publications
 		<li><a href="{{ item.pdf }}">PDF</a></li>
 		{% endif %}
 		{% if item.pageurl %}
-		<li><a href="{{ site.baseurl }}{{ item.pageurl }}">More</a> (<a href="{{ site.baseurl }}{{ item.pageurl }}#bibtex">Bibtex</a>{% if item.abstract %}, <a href="{{ site.baseurl }}{{ item.pageurl }}#abstract">abstract</a>{% endif %})</a></li>
+		<li><a href="{{ site.baseurl }}{{ item.pageurl }}">More</a> (<a href="{{ site.baseurl }}{{ item.pageurl }}#bibtex">Bibtex</a>{% if item.abstract %}, <a href="{{ site.baseurl }}{{ item.pageurl }}#abstract">abstract</a>{% endif %})</li>
 		{% endif %}
 		</ul>
 	</li>

@@ -27,7 +27,7 @@ title:
 	<a class="carousel-control left" href="#featured" data-slide="prev">&lsaquo;</a>
 	<a class="carousel-control right" href="#featured" data-slide="next">&rsaquo;</a>
 </div>
-<script>
+<script type="text/javascript">
 $(function() {
 	$('#featured').carousel('pause');
 });
@@ -46,7 +46,7 @@ $(function() {
 	{% stringtolist years %}
 		<ul class="yearlist">
 			{% for year in years limit:5 %}
-			<li><a href="{{ site.baseurl }}publications#{{ year }}">{{ year }}</a></li>
+			<li><a href="{{ site.baseurl }}publications#year{{ year }}">{{ year }}</a></li>
 			{% endfor %}
 			<li><a href="{{ site.baseurl }}publications">All</a></li>
 		</ul>
@@ -64,7 +64,7 @@ $(function() {
 		<li><a href="{{ item.pdf }}">PDF</a></li>
 		{% endif %}
 		{% if item.pageurl %}
-		<li><a href="{{ site.baseurl }}{{ item.pageurl }}">More</a> (<a href="{{ site.baseurl }}{{ item.pageurl }}#bibtex">Bibtex</a>{% if item.abstract %}, <a href="{{ site.baseurl }}{{ item.pageurl }}#abstract">abstract</a>{% endif %})</a></li>
+		<li><a href="{{ site.baseurl }}{{ item.pageurl }}">More</a> (<a href="{{ site.baseurl }}{{ item.pageurl }}#bibtex">Bibtex</a>{% if item.abstract %}, <a href="{{ site.baseurl }}{{ item.pageurl }}#abstract">abstract</a>{% endif %})</li>
 		{% endif %}
 		</ul>
 	</li>
@@ -85,7 +85,7 @@ $(function() {
 	{% stringtolist years %}
 		<ul class="yearlist">
 			{% for year in years limit:5 %}
-			<li><a href="{{ site.baseurl }}news#{{ year }}">{{ year }}</a></li>
+			<li><a href="{{ site.baseurl }}news#year{{ year }}">{{ year }}</a></li>
 			{% endfor %}
 			<li><a href="{{ site.baseurl }}news">All</a></li>
 		</ul>
