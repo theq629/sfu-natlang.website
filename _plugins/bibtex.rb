@@ -122,6 +122,8 @@ module Jekyll
       bibtex['authors'] = CiteProc.process({ 'author' => citeproc['author'] }, :style => cite_style, :locale => cite_locale) if citeproc['author'] != nil
       # Numeric month.
       bibtex['monthnum'] = month_to_integer(bibtex['month'].downcase) if bibtex['month'] != nil
+      # Make the key accessable to liquid.
+      bibtex['key'] = bibtex.key
     end
 
     # Cache for loaded bibliographies to avoid repeating parsing and sorting.

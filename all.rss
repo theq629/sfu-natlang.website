@@ -1,0 +1,29 @@
+---
+title: News
+layout: rss
+---
+
+{% bibliography %}
+{% for item in bibliography limit:10 %}
+<item>
+	<title>{% if item.title %}{{ item.title }}{% else %}Publication{% endif %}{% if item.year %} ({{ item.year }}){% endif %}</title>
+	<description>
+	{{ item.html }}
+	</description>
+	<guid>{{ item.key }}</giid>
+	<link>{{ site.baseurl }}{{ item.pageurl }}</link>
+</item>
+{% endfor %}
+{% endbibliography %}
+
+{% for post in site.posts limit:10 %}
+<item>
+	<title>{{ post.title }}</title>
+	<description>
+	{{ post.content }}
+	</description>
+	<guid>{{ post.url }}</giid>
+	<link>{{ site.baseurl }}{{ post.url }}</link>
+	<pubDate>{{ post.time | date_to_xmlschema }}</pubDate>
+</item>
+{% endfor %}
