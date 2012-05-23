@@ -34,12 +34,34 @@ body p img {
 	padding: 1em;
 }
 
+.pageheader {
+	padding-bottom: 4px;
+}
 .pageheader h1 {
 	font-size: 48px;
+	border-style: none none solid none;
+	border-width: thin;
+	border-color: #dddddd;
+	padding-bottom: 4px;
 }
 .publication .pageheader h1 {
 	font-size: 18px;
 	line-height: 27px;
+}
+.frontpage h1 {
+	border-style: none none solid none;
+	border-width: thin;
+	border-color: #dddddd;
+}
+.software h1 {
+	border-style: none none solid none;
+	border-width: thin;
+	border-color: #dddddd;
+}
+.frontpage .mainlinks h1 {
+	border-style: none none solid none;
+	border-width: thin;
+	border-color: #dddddd;
 }
 
 .publicationlinks {
@@ -61,4 +83,10 @@ body p img {
 }
 .publicationlinks li {
 	font-size: 18px;
+}
+
+.mainlinks h1 {
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: normal;
 }
