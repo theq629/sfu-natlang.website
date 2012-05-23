@@ -1,4 +1,3 @@
-baseurl: http://www2.cs.sfu.ca/~mwhitney/personal/test/jekyll/_site/
 permalink: posts/:year-:month-:day-:title
 featured:
   list_file: featured
