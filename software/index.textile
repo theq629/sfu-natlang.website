@@ -4,7 +4,7 @@ title: Software
 pageclass: software
 ---
 
-h1(#yarowsky). Yarowsky
+h1(#yarowsky). Yarowsky algorithm
 
 * "Github":https://github.com/sfu-natlang/yarowsky
 
