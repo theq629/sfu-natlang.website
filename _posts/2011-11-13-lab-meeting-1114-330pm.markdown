@@ -1,0 +1,27 @@
+---
+date: '2011-11-13 22:09:28'
+layout: post
+slug: lab-meeting-1114-330pm
+status: publish
+title: 'Lab meeting: 11/14 3:30pm'
+wordpress_id: '1558'
+categories:
+- Lab Meeting
+---
+
+
+The next lab meeting will be on Monday November 14, 2011 at 3:30pm, in TASC1 9408.
+
+
+
+
+
+
+David Lindberg will be presenting [Natural Language Interfaces to Ontologies: Combining Syntactic Analysis and Ontology-based Lookup through the User Interaction](http://gate.ac.uk/sale/dd/experiments/eswc/60880106.pdf) by D. Damljanovic, M. Agatonovic and H. Cunningham.
+
+
+> With large datasets such as Linked Open Data available, there is a need for more user-friendly interfaces which will bring the advantages of these data closer to the casual users. Several recent studies have shown user preference to Natural Language Interfaces (NLIs) in comparison to others. Although many NLIs to ontologies have been developed, those that have reasonable performance are domain-specific and tend to require customisation for each new domain which, from a developer's perspective, makes them expensive to maintain. We present our system FREyA, which combines syntactic parsing with the knowledge encoded in ontologies in order to reduce the customisation effort. If the system fails to automatically derive an answer, it will generate clarification dialogs for the user. The user's selections are saved and used for training the system in order to improve its performance over time. FREyA is evaluated using Mooney Geoquery dataset with very high precision and recall.
+
+
+
+

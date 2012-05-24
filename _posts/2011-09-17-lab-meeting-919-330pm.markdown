@@ -1,0 +1,27 @@
+---
+date: '2011-09-17 09:00:46'
+layout: post
+slug: lab-meeting-919-330pm
+status: publish
+title: 'Lab meeting: 9/19 3:30pm'
+wordpress_id: '1535'
+categories:
+- Lab Meeting
+---
+
+
+The second lab meeting of the semester will be on Monday September 19, 2011 at 3:30pm, in TASC1 9408.
+
+
+
+
+
+
+Ann Clifton will be giving a presentation which she describes as follows:
+
+
+> I'll be talking about some ongoing work on capturing morphological fluency in MT, applying techniques developed in English-Finnish MT to Chinese English MT. Recent work has shown    that while Chinese doesn't explicitly mark noun number, omitting this info from the translation system training data and then generating it with a target-side LM hurts BLEU scores.  We apply instead a post-processing prediction model to generate target-side noun marking that can take into account arbitrary, bilingual features of the parallel data to try to      improve Chinese-English translation fluency.
+
+
+
+

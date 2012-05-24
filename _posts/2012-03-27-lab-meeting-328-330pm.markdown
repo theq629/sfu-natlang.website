@@ -1,0 +1,27 @@
+---
+date: '2012-03-27 13:37:33'
+layout: post
+slug: lab-meeting-328-330pm
+status: publish
+title: 'Lab meeting: 3/28 3:30pm'
+wordpress_id: '1616'
+categories:
+- Lab Meeting
+---
+
+
+The next lab meeting will be on Wednesday March 28, 2012 at 3:30pm, in TASC1 9408.
+
+
+
+
+
+
+Youngchan Kim will be giving a practice talk for his thesis defence:
+
+
+> Unlike English or Spanish, which has each word clearly segmented, morphologically rich languages, such as Korean, do not have clear optimal word boundaries for machine translation (MT). Previous work has shown that segmenting such languages by incorporating information available from parallel corpus can improve MT results. In this paper we show that this can be improved further by segmenting both source and target languages and present improvement in BLEU scores for English-Korean translation.
+
+
+
+

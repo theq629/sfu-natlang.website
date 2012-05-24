@@ -1,0 +1,27 @@
+---
+date: '2012-03-12 10:01:45'
+layout: post
+slug: lab-meeting-314-330pm
+status: publish
+title: 'Lab meeting: 3/14 3:30pm'
+wordpress_id: '1604'
+categories:
+- Lab Meeting
+---
+
+
+The next lab meeting will be on Wednesday March 14, 2012 at 3:30pm, in TASC1 9408.
+
+
+
+
+
+
+David Lindberg will be giving a presentation which he describes as follows:
+
+
+> I will present an overview of the question generation (QG) problem. I'll motivate the problem, provide some psychological background, give a brief history of QG initiatives and shared tasks, and discuss analysis and evaluation of QG output.                                                                                                  
+
+
+
+

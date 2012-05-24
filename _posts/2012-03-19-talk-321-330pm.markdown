@@ -1,0 +1,16 @@
+---
+date: '2012-03-19 13:45:32'
+layout: post
+slug: talk-321-330pm
+status: publish
+title: 'Talk: 3/21 3:30pm'
+wordpress_id: '1606'
+categories:
+- Events
+- Lab Meeting
+---
+
+This week we will go to the following talk instead of our lab meeting. It is at 3:30pm on March 21, in the IRMACS theatre (ASB 10900).
+
+**Paul Smolensky**
+**Integrating Connectionist and Symbolic Computation in Grammatical Theory**

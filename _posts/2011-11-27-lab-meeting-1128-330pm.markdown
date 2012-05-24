@@ -1,0 +1,27 @@
+---
+date: '2011-11-27 18:54:57'
+layout: post
+slug: lab-meeting-1128-330pm
+status: publish
+title: 'Lab meeting: 11/28 3:30pm'
+wordpress_id: '1569'
+categories:
+- Lab Meeting
+---
+
+
+The next lab meeting will be on Monday November 28, 2011 at 3:30pm, in TASC1 9408.
+
+
+
+
+
+
+Fred Popowich will give a talk which he describes as follows:
+
+
+> I will give a presentation on Siri, which is now part of the new i-phone. The focus will be on what it does, how it works and its limitations.
+
+
+
+

@@ -1,0 +1,28 @@
+---
+date: '2011-07-25 22:02:26'
+layout: post
+slug: lab-meeting-726-1000am
+status: publish
+title: 'Lab meeting: 7/26 10:00am'
+wordpress_id: '1514'
+categories:
+- Lab Meeting
+---
+
+
+This week’s natlang lab meeting is on Tuesday July 26, 2011 at 10:00am, in TASC1 9408.
+
+
+
+
+
+
+Ann and Max will be presenting the following paper:
+
+
+
+
+  * Dipanjan Das and Slav Petrov. [Unsupervised Part-of-Speech Tagging with Bilingual Graph-Based Projections](http://www.aclweb.org/anthology/P/P11/P11-1061.pdf).
+
+
+

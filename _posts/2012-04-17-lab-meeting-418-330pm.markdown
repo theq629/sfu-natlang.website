@@ -1,0 +1,27 @@
+---
+date: '2012-04-17 13:52:38'
+layout: post
+slug: lab-meeting-418-330pm
+status: publish
+title: 'Lab meeting: 4/18 3:30pm'
+wordpress_id: '1632'
+categories:
+- Lab Meeting
+---
+
+
+The next lab meeting will be on Wednesday April 18, 2012 at 3:30pm, in TASC1 9408.
+
+
+
+
+
+
+Majid Razmara will be presenting the following paper: [Model Combination for Machine Translation](http://www.denero.org/content/pubs/naacl10_denero_combination.pdf), John DeNero, Shankar Kumar, Ciprian Chelba, and Franz Och, In proceedings of NAACL, 2010.
+
+
+> Machine translation benefits from two types of decoding techniques: consensus decoding over multiple hypotheses under a single model and system combination over hypotheses from different models. We present model combination, a method that integrates consensus decoding and system combination into a unified, forest-based technique. Our approach makes few assumptions about the underlying component models, enabling us to combine systems with heterogenous structure. Unlike most system combination techniques, we reuse the search space of component models, which entirely avoids the need to align translation hypotheses. Despite its relative simplicity, model combination improves translation quality over a pipelined approach of first applying consensus decoding to individual systems, and then applying system combination to their output. We demonstrate BLEU improvements across data sets and language pairs in large-scale experiments.
+
+
+
+

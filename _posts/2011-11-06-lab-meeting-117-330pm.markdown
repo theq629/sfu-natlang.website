@@ -1,0 +1,27 @@
+---
+date: '2011-11-06 21:02:19'
+layout: post
+slug: lab-meeting-117-330pm
+status: publish
+title: 'Lab meeting: 11/7 3:30pm'
+wordpress_id: '1554'
+categories:
+- Lab Meeting
+---
+
+
+The next lab meeting will be on Monday November 7, 2011 at 3:30pm, in TASC1 9408.
+
+
+
+
+
+
+Majid Razmara will be giving a talk which he describes as follows:
+
+
+> I am going to talk about ensemble decoding during our lab meeting. In ensemble decoding, two or more translation systems contribute different levels of expertise to the decoder. One application of ensemble decoding is domain adaptation where there is a big out-of-domain corpus but little in-domain data and it tries to adapt the general model to the new domain using the small in-domain data. In this experiment, two systems are trained, one on in-domain data and the other on out-of-domain data and using ensemble decoding we try to use the expertise of both systems in translating a set of sentences.
+
+
+
+

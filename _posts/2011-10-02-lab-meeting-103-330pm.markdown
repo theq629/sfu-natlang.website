@@ -1,0 +1,27 @@
+---
+date: '2011-10-02 16:22:19'
+layout: post
+slug: lab-meeting-103-330pm
+status: publish
+title: 'Lab meeting: 10/3 3:30pm'
+wordpress_id: '1547'
+categories:
+- Lab Meeting
+---
+
+
+The fourth lab meeting of the semester will be on Monday October 3, 2011 at 3:30pm, in TASC1 9408.
+
+
+
+
+
+
+Ravikiran Vadlapudi will be making a presentation which he describes as follows:
+
+
+> I will be presenting a short demo of the Semantic Role Labeling system and how it can be integrated into Czsaw followed by a brief description of the SRL pipeline. I will also talk about how to visualize semantic role information in Czsaw.
+
+
+
+

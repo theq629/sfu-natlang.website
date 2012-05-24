@@ -1,0 +1,27 @@
+---
+date: '2012-04-10 14:19:31'
+layout: post
+slug: lab-meeting-411-330pm
+status: publish
+title: 'Lab meeting: 4/11 3:30pm'
+wordpress_id: '1629'
+categories:
+- Lab Meeting
+---
+
+
+The next lab meeting will be on Wednesday April 11, 2012 at 3:30pm, in TASC1 9408.
+
+
+
+
+
+
+Baskaran Sankaran will be presenting the following paper: Mark Johnson, Thomas L. Griffiths and Sharon Goldwater, [Bayesian Inference for PCFGs via Markov Chain Monte Carlo](http://acl.ldc.upenn.edu/N/N07/N07-1018.pdf), in NAACL-HLT 2007.
+
+
+> This paper presents two Markov chain Monte Carlo (MCMC) algorithms for Bayesian inference of probabilistic context free grammars (PCFGs) from terminal strings, providing an alternative to maximum-likelihood estimation using the Inside-Outside algorithm. We illustrate these methods by estimating a sparse grammar describing the morphology of the Bantu language Sesotho, demonstrating that with suitable priors Bayesian techniques can infer linguistic structure in situations where maximum likelihood methods such as the Inside-Outside algorithm only produce a trivial grammar.
+
+
+
+

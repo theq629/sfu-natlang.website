@@ -1,0 +1,56 @@
+---
+date: '2011-07-10 23:17:45'
+layout: post
+slug: lab-meeting-712-1000am
+status: publish
+title: 'Lab meeting: 7/12 10:00am'
+wordpress_id: '1491'
+categories:
+- Lab Meeting
+---
+
+
+It hasn't been possible to update this website for a few weeks, but now it works again. This week's natlang lab meeting is on Tuesday July 12, 2011 at 10:00am, in TASC1 9408.
+
+
+
+
+
+
+This week we will be continuing with papers from ACL 2011. Anoop will be presenting the first two (the first in detail and the second in less detail) and Max will be presenting the last if there is time. There is no need to read the papers beforehand unless interested.
+
+
+
+
+  * Sujith Ravi and Kevin Knight. [Deciphering foreign language](http://aclweb.org/anthology/P/P11/P11-1002.pdf)
+
+
+> In this work, we tackle the task of machine translation (MT) without parallel training data. We frame the MT problem as a decipherment task, treating the foreign text as a cipher for English and present novel methods for training translation models from non-parallel text.  
+
+
+
+
+
+
+  * Sujith Ravi and Kevin Knight. [Bayesian inference for Zodiac and other homophonic ciphers](http://aclweb.org/anthology/P/P11/P11-1025.pdf).
+
+
+> We introduce a novel Bayesian approach for deciphering complex substitution ciphers. Our method uses a decipherment model which combines information from letter n-gram language models as well as word      dictionaries.  Bayesian inference is performed on our model using an efficient sampling technique. We evaluate the quality of the Bayesian decipherment output on simple and homophonic letter substitution ciphers and show that unlike a previous approach, our method consistently produces almost 100% accurate decipherments. The new method can be applied on more complex substitution ciphers and we demonstrate its utility by cracking the famous Zodiac-408 cipher in a fully automated fashion, which has never been done before.
+
+
+
+
+
+
+
+
+  * S.R.K Branavan,  David Silver, and Regina Barzilay. [Learning to Win by Reading Manuals in a Monte-Carlo Framework](http://aclweb.org/anthology/P/P11/P11-1028.pdf).
+
+
+> 
+This paper presents a novel approach for leveraging automatically extracted textual knowledge to improve the performance of control applications such as games. Our ultimate goal is to enrich a stochastic player with high-level guidance expressed in text. Our model jointly learns to identify text that is relevant to a given game state in addition to learning game strategies guided by the selected text. Our method operates in the Monte-Carlo search framework, and learns both text analysis and game strategies based only on environment feedback. We apply our approach to the complex strategy game Civilization II using the official game manual as the text guide. Our results show that a linguistically-informed game-playing agent significantly outperforms its language-unaware counterpart, yielding a 27% absolute improvement and winning over 78% of games when playing against the built-in AI of Civilization II.
+
+
+
+
+

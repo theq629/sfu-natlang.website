@@ -1,0 +1,36 @@
+---
+date: '2011-07-31 22:20:38'
+layout: post
+slug: lab-meeting-82-1000am
+status: publish
+title: 'Lab meeting: 8/2 10:00am'
+wordpress_id: '1519'
+categories:
+- Lab Meeting
+---
+
+
+This week’s natlang lab meeting is on Tuesday August 2, 2011 at 10:00am, in TASC1 9408.
+
+
+
+
+
+
+Milan will be presenting the following paper:
+
+
+
+
+  * 
+Tony Veale. [Creative Language Retrieval: A Robust Hybrid of Information Retrieval and Linguistic Creativity](http://www.aclweb.org/anthology/P/P11/P11-1029.pdf).
+
+
+> Information retrieval (IR) and figurative language processing (FLP) could scarcely be more different in their treatment of language and meaning. IR views language as an open-ended   set of mostly stable signs with which texts can be indexed and retrieved, focusing more on a text's potential relevance than its potential meaning. In contrast, FLP views language   as a system of unstable signs that can be used to talk about the world in creative new ways.  There is another key difference: IR is practical, scalable and robust, and in daily use by millions of casual users. FLP is neither scalable nor robust, and not yet practical enough to migrate beyond the lab. This paper thus presents a mutually beneficial hybrid of IR  and FLP, one that enriches IR with new operators to enable the non-literal retrieval of creative expressions, and which also transplants FLP into a robust, scalable framework in     which practical applications of linguistic creativity can be implemented. 
+
+
+
+
+
+
+

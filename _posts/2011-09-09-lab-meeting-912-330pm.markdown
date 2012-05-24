@@ -1,0 +1,29 @@
+---
+date: '2011-09-09 20:37:28'
+layout: post
+slug: lab-meeting-912-330pm
+status: publish
+title: 'Lab meeting: 9/12 3:30pm'
+wordpress_id: '1527'
+categories:
+- Lab Meeting
+---
+
+
+The first lab meeting of the semester will be on Monday September 12, 2011 at 3:30pm, in TASC1 9408.
+
+
+
+
+
+
+After discussion and updates, Max Whitney will be presenting the following paper:
+
+
+
+
+  * Amarnag Subramanya, Slav Petrov and Fernando Pereira. 
+[Efficient Graph-Based Semi-Supervised Learning of Structured Tagging Models](http://www.petrovi.de/data/emnlp10a.pdf).
+
+
+

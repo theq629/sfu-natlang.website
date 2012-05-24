@@ -1,0 +1,27 @@
+---
+date: '2012-02-07 15:55:08'
+layout: post
+slug: lab-meeting-28-330pm
+status: publish
+title: 'Lab meeting: 2/8 3:30pm'
+wordpress_id: '1584'
+categories:
+- Lab Meeting
+---
+
+
+The next lab meeting will be on Wednesday February 8, 2012 at 3:30pm, in TASC1 9408.
+
+
+
+
+
+
+The agenda is the same as last week due to a change of plans for that meeting. We will discuss ACL long paper submissions, and then Milan Tofiloski will present:
+
+
+> I will provide a broad overview of discourse and discourse parsing, focusing on relations and markers. Markers can be either explicit or implicit. I will discuss the problems associated with the two marker types. I'll also go over the application of discourse parsing toward sentiment analysis.
+
+
+
+

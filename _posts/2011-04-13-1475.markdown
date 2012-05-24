@@ -1,0 +1,31 @@
+---
+date: '2011-04-13 15:37:44'
+layout: post
+slug: '1475'
+status: publish
+title: 'Lab meeting: Thu 4/14 2:30pm'
+wordpress_id: '1475'
+categories:
+- Lab Meeting
+---
+
+
+This week's natlang lab meeting is on Thursday April 14, 2011 at 2:30pm, in TASC1 9408.
+
+
+
+
+
+
+The reading for discussion will be presented by Majid:
+
+
+
+        
+  * Liang Huang and Haitao Mi. [Efficient Incremental Decoding for Tree-to-String Translation](http://www.isi.edu/~lhuang/inc.pdf).
+
+
+
+
+
+

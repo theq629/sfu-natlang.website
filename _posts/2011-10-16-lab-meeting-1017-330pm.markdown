@@ -1,0 +1,27 @@
+---
+date: '2011-10-16 17:44:03'
+layout: post
+slug: lab-meeting-1017-330pm
+status: publish
+title: 'Lab meeting: 10/17 3:30pm'
+wordpress_id: '1550'
+categories:
+- Lab Meeting
+---
+
+
+The next lab meeting will be on Monday October 17, 2011 at 3:30pm, in TASC1 9408.
+
+
+
+
+
+
+Marzieh Razavi will be giving a talk which she describes as follows:
+
+
+> I'll be talking about two clustering methods (Brown Clustering and HMM State Splitting) to build a discriminative dependency parser in the MSTParser format using cluster-based features. The clustering-based parsers are combined together using the Ensemble model. Diverse clustering-based parser models and the ensemble method together significantly improves unlabeled dependency accuracy from 91.07% to 92.37% on Section 23 of the Penn Treebank.
+
+
+
+

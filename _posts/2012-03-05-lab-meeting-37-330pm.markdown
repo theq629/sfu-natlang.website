@@ -1,0 +1,21 @@
+---
+date: '2012-03-05 16:19:52'
+layout: post
+slug: lab-meeting-37-330pm
+status: publish
+title: 'Lab meeting: 3/7 3:30pm'
+wordpress_id: '1601'
+categories:
+- Lab Meeting
+---
+
+
+The next lab meeting will be on Wednesday March 7, 2012 at 3:30pm, in TASC1 9408.
+
+
+
+
+
+
+Ann Clifton will be giving a practice talk for her Depth Examination. The topic is Multi-Source Machine Translation.
+

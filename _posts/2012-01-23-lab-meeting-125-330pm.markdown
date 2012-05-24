@@ -1,0 +1,27 @@
+---
+date: '2012-01-23 11:11:47'
+layout: post
+slug: lab-meeting-125-330pm
+status: publish
+title: 'Lab meeting: 1/25 3:30pm'
+wordpress_id: '1575'
+categories:
+- Lab Meeting
+---
+
+
+The next lab meeting will be on Wednesday January 25, 2012 at 3:30pm, in TASC1 9408.
+
+
+
+
+
+
+Max Whitney will be talking about recent research:
+
+
+> Bootstrapping a classifier from a small set of seed rules can be viewed as the propagation of labels between examples via features shared between them. We introduce a novel variant of the Yarowsky algorithm based on this view. It is a bootstrapping learning method which uses a graph propagation algorithm with a well defined objective function. The experimental results show that our proposed bootstrapping algorithm achieves state of the art performance or better on several different natural language data sets.
+
+
+
+

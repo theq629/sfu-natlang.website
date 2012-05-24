@@ -1,0 +1,22 @@
+---
+date: '2012-02-27 01:14:12'
+layout: post
+slug: talk-229-330pm
+status: publish
+title: 'Talk: 2/29 3:30pm'
+wordpress_id: '1596'
+categories:
+- Events
+- Lab Meeting
+---
+
+This week the following talk will replace our lab meeting, at the usual time and place: Wednesday February 29, 2012 at 3:30pm, in TASC1 9408.
+
+**Discourse Analysis of Asynchronous Conversations**
+
+Giuseppe Carenini, Associate Professor
+Department of Computer Science,
+University of British Columbia.
+carenini@cs.ubc.ca, http://www.cs.ubc.ca/~carenini
+
+Due to the Internet revolution, human conversational data--in written forms--are accumulating at a phenomenal rate, as more and more people engage  in email exchanges, blogging, texting and other social media activities. In this talk, we will present automatic methods for analyzing conversational text generated in asynchronous conversations, i.e., where participants communicate with each other at different times (e.g., email, blog, forum). Our focus will be on novel techniques to detect the topics covered in the conversation, to identify what dialog acts are expressed by each message (e.g., a request, a proposal), as well as preliminary ideas on how to perform discourse (aka rhetorical) parsing of each message (i.e., identify the main claim and how it is expanded/supported).

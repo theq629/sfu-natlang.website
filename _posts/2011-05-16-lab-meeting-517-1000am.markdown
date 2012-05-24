@@ -1,0 +1,35 @@
+---
+date: '2011-05-16 15:18:10'
+layout: post
+slug: lab-meeting-517-1000am
+status: publish
+title: 'Lab meeting: 5/17 10:00am'
+wordpress_id: '1480'
+categories:
+- Lab Meeting
+---
+
+This week’s natlang lab meeting is on Thursday May 17, 2011 at 10:00am, in TASC1 9408.
+
+Practice talk: Automatic Generation of Multilingual Sports Summaries (Fahim Hasan)
+
+
+> Natural Language Generation is a subfield of Natural Language Processing,
+which is concerned with automatically creating human readable text from
+non-linguistic forms of information. A template-based approach to Natural
+Language Generation utilizes base formats for different types of sentences,
+which are subsequently transformed to create the final readable forms of the
+output. In this thesis, we investigate the suitability of a template-based
+approach to multilingual Natural Language Generation of sports summaries. We
+implement a system to generate English and Bangla summaries making use of a
+pipelined architecture to transform data in multiple stages. Additionally,
+we investigate the evaluation of automatically generated summaries, and look
+at how they differ from human generated summaries. We show that by using a
+template-based approach the system can generate acceptable output in
+multiple languages without requiring detailed grammatical knowledge, which
+is important for languages such as Bangla where computational resources are
+still scarce.
+
+
+
+

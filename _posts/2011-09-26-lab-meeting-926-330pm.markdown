@@ -1,0 +1,21 @@
+---
+date: '2011-09-26 00:29:10'
+layout: post
+slug: lab-meeting-926-330pm
+status: publish
+title: 'Lab meeting: 9/26 3:30pm'
+wordpress_id: '1540'
+categories:
+- Lab Meeting
+---
+
+
+The third lab meeting of the semester will be on Monday September 26, 2011 at 3:30pm, in TASC1 9408.
+
+
+
+
+
+
+Youngchan Kim will be presenting [Unsupervised Tokenization for Machine Translation](http://www.cs.rochester.edu/~gildea/pubs/chung-gildea-emnlp09.pdf) by Tagyoung Chung and Daniel Gildea, and describing the application of the idea in English-Korean machine translation for his own research. If time permits he will also cover [Unsupervised Bilingual Morpheme Segmentation and Alignment with Context-rich Hidden Semi-Markov Models](http://www.cs.umass.edu/~narad/_papers/P11-1090.pdf) by Jason Naradowsky and Kristina Toutanova.
+

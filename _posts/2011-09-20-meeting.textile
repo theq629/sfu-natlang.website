@@ -1,8 +1,0 @@
----
-layout: post
-title: Lab meeting
----
-
-Anoop Sarkar will talk about ideas on dependency parsing.
-
-bq. Arc-standard and Arc-eager shift-reduce dependency parsing

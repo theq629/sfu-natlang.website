@@ -1,0 +1,27 @@
+---
+date: '2011-07-18 09:58:36'
+layout: post
+slug: lab-meeting-719-1000am
+status: publish
+title: 'Lab meeting: 7/19 10:00am'
+wordpress_id: '1503'
+categories:
+- Lab Meeting
+---
+
+
+This week’s natlang lab meeting is on Tuesday July 19, 2011 at 10:00am, in TASC1 9408.
+
+
+
+
+
+
+Max will be presenting the following paper (which we didn't get to last week):
+
+
+
+
+  * S.R.K Branavan,  David Silver, and Regina Barzilay. [Learning to Win by Reading Manuals in a Monte-Carlo Framework](http://aclweb.org/anthology/P/P11/P11-1028.pdf).
+
+
