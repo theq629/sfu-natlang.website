@@ -8,5 +8,4 @@ bibtex:
   sort_keys: -year order
   page_dir: publications
   page_layout: publication
-  in_default_bib_type: inbib
   append_ref: " <ul class=\"publicationlinks\">{% if item.url %}<li><a href=\"{{ item.url }}\">URL</a></li>{% endif %}{% if item.pdf %}<li><a href=\"{{ item.pdf }}\">PDF</a></li>{% endif %}{% if item.pageurl %}<li><a href=\"{{ site.baseurl }}{{ item.pageurl }}\">More</a> (<a href=\"{{ site.baseurl }}{{ item.pageurl }}#bibtex\">Bibtex</a>{% if item.abstract %}, <a href=\"{{ site.baseurl }}{{ item.pageurl }}#abstract\">abstract</a>{% endif %})</li>{% endif %}</ul>"

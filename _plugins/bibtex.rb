@@ -278,11 +278,11 @@ module Jekyll
   class ReferenceListBlock < Liquid::Block
     def initialize(tag_name, param_text, tokens)
       super
-      params = param_text.split(',').map { |p| p.strip }
-      @show_abstracts = params.include?('abstracts')
     end
 
     def parse(tokens)
+      # Override parsing to avoid conflicts with bibtex syntax.
+      # This part is based on jekyll-citation (https://github.com/archome/jekyll-citation/blob/master/citation.rb).
       @nodelist = []
       while token = tokens.shift
         if token =~ IsTag and token =~ FullToken and block_delimiter == $1
@@ -301,7 +301,6 @@ module Jekyll
       config = site['bibtex'] || {}
       dir = config['page_dir']
       layout = config['page_layout']
-      in_default_bib_type = config['in_default_bib_type'] || 'indefaultbib'
       bibtex_string = super
       if dir != nil and layout != nil then
         bibtex_bib = Jekyll::Bibtex.make_references(site, site['source'], config, :string => bibtex_string)
@@ -309,9 +308,8 @@ module Jekyll
         begin
           ["<ul>"] +
             bibtex_bib.map do |bibtex|
-              bibtex = bibtex_defaults[bibtex.key] if bibtex.type.to_s == in_default_bib_type
               lines = ["<li class=\"referencelist\">", "#{Reference.new(bibtex, context).to_liquid['html']}"]
-              lines << "<blockquote>#{bibtex['abstract']}</blockquote>" if @show_abstracts and bibtex['abstract'] != nil
+              lines << "<blockquote>#{bibtex['abstract']}</blockquote>" if bibtex['abstract'] != nil
               lines << "</li>"
               lines
             end.flatten.map { |l| "\t" + l } +
