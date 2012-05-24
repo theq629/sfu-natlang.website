@@ -86,6 +86,9 @@ body p img {
 .bibliography .publicationlinks li {
 	font-size: 11px;
 }
+.referencelist .publicationlinks li {
+	font-size: 11px;
+}
 .publicationlinks li {
 	font-size: 18px;
 }
