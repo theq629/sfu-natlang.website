@@ -48,20 +48,25 @@ body p img {
 	font-size: 18px;
 	line-height: 27px;
 }
-.frontpage h1 {
+.frontpage .contentarea h1 {
 	border-style: none none solid none;
 	border-width: thin;
 	border-color: #dddddd;
 }
-.software h1 {
+.software .contentarea h1 {
 	border-style: none none solid none;
 	border-width: thin;
 	border-color: #dddddd;
 }
-.frontpage .mainlinks h1 {
+.people .contentarea h1 {
 	border-style: none none solid none;
 	border-width: thin;
 	border-color: #dddddd;
+}
+
+.mainlinks img {
+	padding-left: 9px;
+	padding-bottom: 9px;
 }
 
 .publicationlinks {
