@@ -2,9 +2,15 @@
 layout: default
 title: 
 pageclass: frontpage
+extrascript: |
+  <script type="text/javascript">
+  $(function() {
+  	$('#featured').carousel({interval: false, pause: true});
+  });
+  </script>
 ---
 
-<div id="featured" class="carousel">
+<div id="featured" class="carousel slide">
 	<div class="carousel-inner">
 		{% assign first = true %}
 		{% featured %}
@@ -35,11 +41,6 @@ pageclass: frontpage
 	<a class="carousel-control left" href="#featured" data-slide="prev">&lsaquo;</a>
 	<a class="carousel-control right" href="#featured" data-slide="next">&rsaquo;</a>
 </div>
-<script type="text/javascript">
-$(function() {
-	$('#featured').carousel('pause');
-});
-</script>
 
 <h1>Publications</h1>
 {% bibliography %}

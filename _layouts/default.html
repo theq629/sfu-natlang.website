@@ -81,5 +81,8 @@
 	<script src="bootstrap/js/bootstrap.js" type="text/javascript"></script>
 	<script src="bootstrap/js/bootstrap-carousel.js" type="text/javascript"></script>
 	<script src="bootstrap/js/bootstrap-transition.js" type="text/javascript"></script>
+	{% if page.extrascript %}
+	{{ page.extrascript }}
+	{% endif %}
 </body>
 </html>
