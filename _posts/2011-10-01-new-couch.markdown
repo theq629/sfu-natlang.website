@@ -10,4 +10,4 @@ categories:
 ---
 
 The long-awaited couch has finally shown up, and we did some rearranging of the break area.
-[![](http://natlang.cs.sfu.ca/wp-content/uploads/2011/10/couch-300x224.jpg)](http://natlang.cs.sfu.ca/wp-content/uploads/2011/10/couch.jpg)
+[![]({{ site.baseurl }}images/oldsite/couch-300x224.jpg)]({{ site.baseurl }}images/oldsite/couch.jpg)

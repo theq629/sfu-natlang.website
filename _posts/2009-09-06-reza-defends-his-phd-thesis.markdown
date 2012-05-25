@@ -10,7 +10,7 @@ categories:
 ---
 
 
-[![Reza defends his Ph.D. thesis](http://natlang.cs.sfu.ca/wp-content/uploads/2009/09/img_4296-300x207.jpg)](http://natlang.cs.sfu.ca/wp-content/uploads/2009/09/img_4296.jpg)
+[![Reza defends his Ph.D. thesis]({{ site.baseurl }}images/oldsite/img_4296-300x207.jpg)]({{ site.baseurl }}images/oldsite/img_4296.jpg)
 
 Gholamreza Haffari successfully defended his Ph.D. thesis on August 17th, 2009. His thesis is entitled _Machine Learning Approaches To Dealing with Limited Training Data in Statistical Machine Translation_. His external examiner was [Kevin Knight](http://www.isi.edu/~knight/). His internal examiner was [Oliver Schulte](http://www.cs.sfu.ca/~oschulte/). His senior supervisor was [Anoop Sarkar](http://www.cs.sfu.ca/~anoop/) and his supervisory committee included: [Greg Mori](http://www.cs.sfu.ca/~mori/), [Shaojun Wang](http://www.engineering.wright.edu/~swang/), and [Valentine Kabanets](http://www.cs.sfu.ca/~kabanets/). [Torsten Moller]() chaired the defense.
 

@@ -7,7 +7,7 @@ For contact information, see the "contact":{{ site.baseurl }}contact page.
 
 h1. What is Natural Language Processing?
 
-!(pull-right)http://natlang.cs.sfu.ca/wp-content/uploads/2008/09/natlang1-150x122.jpg()!
+"!(pull-right){{ site.baseurl }}images/oldsite/natlang1-150x122.jpg()!":{{ site.baseurl }}images/oldsite/natlang1.jpg
 
 Natural Language Processing (NLP) is the automatic analysis of human languages such as English, Korean, etc. by computer algorithms. Unlike artificially created programming languages where the structure and meaning of programs is easy to encode, human languages provide an interesting challenge, both in terms of its analysis and the learning of language from observations.
 
@@ -19,7 +19,7 @@ Like other artificial intelligence sub-fields, there is the issue of what knowle
 
 h1. History of our Lab
 
-!(pull-right)http://natlang.cs.sfu.ca/wp-content/uploads/2008/09/natlang2-150x124.jpg()!
+"!(pull-right){{ site.baseurl }}images/oldsite/natlang2-150x124.jpg()!":{{ site.baseurl }}images/oldsite/natlang2.jpg
 
 The natural language laboratory at Simon Fraser University was founded in 1983 and is one of the larger North American labs working on natural language processing and computational linguistics.
 
