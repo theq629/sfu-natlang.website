@@ -1,3 +1,7 @@
-2000-01-01-anoop
-2000-01-01-fred.textile
-2012-05-15-nwnlp2012
+-
+  img: images/openhouse-2012.png
+  text: The Natural Language Lab will be at SFU's 2012 open house.
+-
+  url: software#yarowsky
+  img: images/whitney-sarkar-yarowskyalgo-2012.png
+  text: Max Whitney and Anoop Sarkar have developed implementations of the Yarowsky algorithm and related bootstrapping algorithms, to accompany their ACL 2012 paper.

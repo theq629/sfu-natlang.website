@@ -8,18 +8,25 @@ pageclass: frontpage
 	<div class="carousel-inner">
 		{% assign first = true %}
 		{% featured %}
-		{% for post in featured %}
+		{% for item in featured %}
 		<div class="item{% if first %} active{% endif %}">
-			{% if post.featured_image %}
-			<img src="{{ post.featured_image }}" alt="">
-			{% endif %}
-			{% if post.featured_text %}
+			<div style="width: 590px; height: 243px">
+				{% if item.url %}
+				<a href="{{ site.baseurl }}{{ item.url }}"><img src="{{ site.baseurl }}{{ item.img }}" alt=""></a>
+				{% else %}
+				<img src="{{ item.img }}" alt="">
+				{% endif %}
+			</div>
 			<div class="carousel-caption">
 				<p>
-				{{ post.featured_text }}
+				{% if item.text %}
+				{{ item.text }}
+				{% endif %}
+				{% if item.url %}
+				<a href="{{ site.baseurl }}{{ item.url }}">More</a>
+				{% endif %}
 				</p>
 			</div>
-			{% endif %}
 			{% assign first = false %}
 		</div>
 		{% endfor %}
