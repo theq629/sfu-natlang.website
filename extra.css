@@ -103,3 +103,7 @@ body p img {
 	line-height: 18px;
 	font-weight: normal;
 }
+
+.contentarea img.pull-right {
+	clear: right;
+}
