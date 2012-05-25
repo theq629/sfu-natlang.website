@@ -22,7 +22,7 @@ This week we will be continuing with papers from ACL 2011. Anoop will be present
 
 
 
-  * Sujith Ravi and Kevin Knight. [Deciphering foreign language](http://aclweb.org/anthology/P/P11/P11-1002.pdf)
+* Sujith Ravi and Kevin Knight. [Deciphering foreign language](http://aclweb.org/anthology/P/P11/P11-1002.pdf)
 
 
 > In this work, we tackle the task of machine translation (MT) without parallel training data. We frame the MT problem as a decipherment task, treating the foreign text as a cipher for English and present novel methods for training translation models from non-parallel text.  
@@ -32,7 +32,7 @@ This week we will be continuing with papers from ACL 2011. Anoop will be present
 
 
 
-  * Sujith Ravi and Kevin Knight. [Bayesian inference for Zodiac and other homophonic ciphers](http://aclweb.org/anthology/P/P11/P11-1025.pdf).
+* Sujith Ravi and Kevin Knight. [Bayesian inference for Zodiac and other homophonic ciphers](http://aclweb.org/anthology/P/P11/P11-1025.pdf).
 
 
 > We introduce a novel Bayesian approach for deciphering complex substitution ciphers. Our method uses a decipherment model which combines information from letter n-gram language models as well as word      dictionaries.  Bayesian inference is performed on our model using an efficient sampling technique. We evaluate the quality of the Bayesian decipherment output on simple and homophonic letter substitution ciphers and show that unlike a previous approach, our method consistently produces almost 100% accurate decipherments. The new method can be applied on more complex substitution ciphers and we demonstrate its utility by cracking the famous Zodiac-408 cipher in a fully automated fashion, which has never been done before.
@@ -44,7 +44,7 @@ This week we will be continuing with papers from ACL 2011. Anoop will be present
 
 
 
-  * S.R.K Branavan,  David Silver, and Regina Barzilay. [Learning to Win by Reading Manuals in a Monte-Carlo Framework](http://aclweb.org/anthology/P/P11/P11-1028.pdf).
+* S.R.K Branavan,  David Silver, and Regina Barzilay. [Learning to Win by Reading Manuals in a Monte-Carlo Framework](http://aclweb.org/anthology/P/P11/P11-1028.pdf).
 
 
 > 

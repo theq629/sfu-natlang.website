@@ -14,6 +14,7 @@ categories:
 Set-Top Television Translator To Provide Spanish Captioning
 
 By STEVEN E. BRIER
+
 Published: July 23, 1998
 
 English-language television programs may gain a stronger foothold among Spanish-speaking viewers, thanks to a new translation device.

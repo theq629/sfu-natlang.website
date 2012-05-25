@@ -21,7 +21,7 @@ Anoop Sarkar will talk about ideas on dependency parsing.
 
 
 > **Arc-standard and Arc-eager shift-reduce dependency parsing**
-I will talk about shift-reduce parsing for dependency parsers. In particular I will describe the algorithms introduced by Nivre et al. and used in their dependency parser: MALTparser (yes, it's single malt). I will talk about the connection between dependency parsers and parsers for context-free grammars, which might provide a uniform framework for the different Nivre-style algorithms.
+> I will talk about shift-reduce parsing for dependency parsers. In particular I will describe the algorithms introduced by Nivre et al. and used in their dependency parser: MALTparser (yes, it's single malt). I will talk about the connection between dependency parsers and parsers for context-free grammars, which might provide a uniform framework for the different Nivre-style algorithms.
 
 
 

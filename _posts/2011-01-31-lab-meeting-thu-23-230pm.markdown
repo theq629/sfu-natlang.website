@@ -22,10 +22,10 @@ Readings for discussion are:
 
 
         
-  * Thomas L. Griffiths; Alan Yuille. [A primer on probabilistic inference](http://cocosci.berkeley.edu/tom/papers/tutorial.pdf).
+* Thomas L. Griffiths; Alan Yuille. [A primer on probabilistic inference](http://cocosci.berkeley.edu/tom/papers/tutorial.pdf).
 
         
-  * Sharon Goldwater. [Nonparametric Bayesian Models of Lexical Acquisition](http://homepages.inf.ed.ac.uk/sgwater/papers/thesis_1spc.pdf). (First three chapters.)
+* Sharon Goldwater. [Nonparametric Bayesian Models of Lexical Acquisition](http://homepages.inf.ed.ac.uk/sgwater/papers/thesis_1spc.pdf). (First three chapters.)
 
 
 

@@ -17,11 +17,11 @@ Title: [Model Adaptation in Statistical Machine Translation for Synchronou
 
 Abstract:
 
-Hierarchical phrase based translation uses context free grammar rules for decoding source sentences into target language sentences. We derive rules for translation from a parallel corpus which are then exploited to translate sentences. Thus in effect we have a large table containing source and target language phrase pairs composed of  terminals and non-terminals.
+> Hierarchical phrase based translation uses context free grammar rules for decoding source sentences into target language sentences. We derive rules for translation from a parallel corpus which are then exploited to translate sentences. Thus in effect we have a large table containing source and target language phrase pairs composed of  terminals and non-terminals.
+> 
+> In this talk we go deeper and explore the case where we have a limited amount of in-domain parallel text for deriving  the rules of the given language pair. We assume the availability of a very large amount of out-of-domain parallel text for the same language pair. So we have a large parallel corpus for out-of-domain data and a small parallel corpus for the in-domain data. We carry out experiments to improve the translation score by training our system on the rules from the two domains.
 
-In this talk we go deeper and explore the case where we have a limited amount of in-domain parallel text for deriving  the rules of the given language pair. We assume the availability of a very large amount of out-of-domain parallel text for the same language pair. So we have a large parallel corpus for out-of-domain data and a small parallel corpus for the in-domain data. We carry out experiments to improve the translation score by training our system on the rules from the two domains.
-
-[[Presentation slides](http://www.cs.sfu.ca/~anoop/students/manaal/manaal-slides_july-2009.pdf)]
+\[[Presentation slides](http://www.cs.sfu.ca/~anoop/students/manaal/manaal-slides_july-2009.pdf)\]
 
 
 

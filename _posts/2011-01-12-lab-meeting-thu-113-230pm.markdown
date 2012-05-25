@@ -14,9 +14,9 @@ This week's natlang lab meeting is on Thursday January 13, 2011 at 2:30pm, in TA
 
 
 	
-  * Erica Greene, Tugba Bodrumlu, Kevin Knight. ["Poetic" Statistical Machine Translation: Rhyme and Meter](http://aclweb.org/anthology-new/D/D10/D10-1016.pdf)
+* Erica Greene, Tugba Bodrumlu, Kevin Knight. ["Poetic" Statistical Machine Translation: Rhyme and Meter](http://aclweb.org/anthology-new/D/D10/D10-1016.pdf)
 
 	
-  * Dmitriy Genzel, Jakob Uszkoreit, Franz Och. [Automatic Analysis of Rhythmic Poetry with Applications to Generation and Translation](http://aclweb.org/anthology-new/D/D10/D10-1051.pdf)
+* Dmitriy Genzel, Jakob Uszkoreit, Franz Och. [Automatic Analysis of Rhythmic Poetry with Applications to Generation and Translation](http://aclweb.org/anthology-new/D/D10/D10-1051.pdf)
 
 

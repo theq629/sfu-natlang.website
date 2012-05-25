@@ -9,7 +9,7 @@ categories:
 - News
 ---
 
-[caption id="attachment_1330" align="aligncenter" width="300" caption="Analysis of statistical machine translation into Finnish"][![Analysis of statistical machine translation into Finnish](http://natlang.cs.sfu.ca/wp-content/uploads/2010/01/finnishanalysis-300x122.png)](http://natlang.cs.sfu.ca/wp-content/uploads/2010/01/finnishanalysis.png)[/caption]
+[![Analysis of statistical machine translation into Finnish]({{ site.baseurl }}images/oldsite/finnishanalysis-300x122.png "Analysis of statistical machine translation into Finnish")]({{ site.baseurl }}images/oldsite/finnishanalysis.png)
 
 Associate Professor [Anoop Sarkar](http://www.cs.sfu.ca/~anoop/) recently won a [Google Research Award](http://research.google.com/university/relations/research_awards.html) for research into statistical machine translation.
 

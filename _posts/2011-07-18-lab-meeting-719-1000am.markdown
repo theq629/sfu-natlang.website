@@ -22,6 +22,6 @@ Max will be presenting the following paper (which we didn't get to last week):
 
 
 
-  * S.R.K Branavan,  David Silver, and Regina Barzilay. [Learning to Win by Reading Manuals in a Monte-Carlo Framework](http://aclweb.org/anthology/P/P11/P11-1028.pdf).
+* S.R.K Branavan,  David Silver, and Regina Barzilay. [Learning to Win by Reading Manuals in a Monte-Carlo Framework](http://aclweb.org/anthology/P/P11/P11-1028.pdf).
 
 

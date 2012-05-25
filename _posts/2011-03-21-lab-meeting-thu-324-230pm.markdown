@@ -22,10 +22,10 @@ Readings for discussion are:
 
 
         
-  * Kevin Knight. ["Bayesian Inference with Tears"](http://www.isi.edu/natural-language/people/bayes-with-tears.pdf) (to finish).
+* Kevin Knight. ["Bayesian Inference with Tears"](http://www.isi.edu/natural-language/people/bayes-with-tears.pdf) (to finish).
 
         
-  * Philip Resnik and Eric Hardisty. [Gibbs Sampling for the Uninitiated](http://www.umiacs.umd.edu/~resnik/pubs/gibbs.pdf).
+* Philip Resnik and Eric Hardisty. [Gibbs Sampling for the Uninitiated](http://www.umiacs.umd.edu/~resnik/pubs/gibbs.pdf).
 
 
 

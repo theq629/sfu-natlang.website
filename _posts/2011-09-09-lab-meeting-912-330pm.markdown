@@ -22,7 +22,7 @@ After discussion and updates, Max Whitney will be presenting the following paper
 
 
 
-  * Amarnag Subramanya, Slav Petrov and Fernando Pereira. 
+* Amarnag Subramanya, Slav Petrov and Fernando Pereira. 
 [Efficient Graph-Based Semi-Supervised Learning of Structured Tagging Models](http://www.petrovi.de/data/emnlp10a.pdf).
 
 

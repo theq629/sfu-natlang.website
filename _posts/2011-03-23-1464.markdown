@@ -10,6 +10,7 @@ categories:
 ---
 
 **Time:** Thursday, April 7th, 2011 11:30 am
+
 **Place:** RCB 6152
 
 **Title:** Automated reconstruction of protolanguages using probabilistic models of sound change
@@ -18,5 +19,5 @@ categories:
 
 
 
-In this talk, I will outline my work on a probabilistic, computational approach to diachronic phonology. I will show an application to Austronesian languages, where we built a large-scale automatic reconstruction of a set of protolanguages. The results provide insight into the factors determining which sounds in a language are likely to change over time. The models can also be used to simultaneously infer cognate sets, addressing a circularity problem of previous computational approaches to language change.
+> In this talk, I will outline my work on a probabilistic, computational approach to diachronic phonology. I will show an application to Austronesian languages, where we built a large-scale automatic reconstruction of a set of protolanguages. The results provide insight into the factors determining which sounds in a language are likely to change over time. The models can also be used to simultaneously infer cognate sets, addressing a circularity problem of previous computational approaches to language change.
 

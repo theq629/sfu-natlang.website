@@ -22,7 +22,7 @@ Readings for discussion are:
 
 
         
-  * Kevin Knight. ["Bayesian Inference with Tears"](http://www.isi.edu/natural-language/people/bayes-with-tears.pdf).
+* Kevin Knight. ["Bayesian Inference with Tears"](http://www.isi.edu/natural-language/people/bayes-with-tears.pdf).
 
 
 

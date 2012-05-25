@@ -24,9 +24,9 @@ Readings for discussion are two papers on dual decomposition from EMNLP 2010, th
 
 
 	
-  * Terry Koo; Alexander M. Rush; Michael Collins; Tommi Jaakkola; David Sontag. [Dual Decomposition for Parsing with Non-Projective Head Automata](http://aclweb.org/anthology-new/D/D10/D10-1125.pdf)
+* Terry Koo; Alexander M. Rush; Michael Collins; Tommi Jaakkola; David Sontag. [Dual Decomposition for Parsing with Non-Projective Head Automata](http://aclweb.org/anthology-new/D/D10/D10-1125.pdf)
 
 	
-  * Alexander M Rush; David Sontag; Michael Collins; Tommi Jaakkola. [On Dual Decomposition and Linear Programming Relaxations for Natural Language Processing](http://aclweb.org/anthology-new/D/D10/D10-1001.pdf)
+* Alexander M Rush; David Sontag; Michael Collins; Tommi Jaakkola. [On Dual Decomposition and Linear Programming Relaxations for Natural Language Processing](http://aclweb.org/anthology-new/D/D10/D10-1001.pdf)
 
 

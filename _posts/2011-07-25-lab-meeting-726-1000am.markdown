@@ -22,7 +22,7 @@ Ann and Max will be presenting the following paper:
 
 
 
-  * Dipanjan Das and Slav Petrov. [Unsupervised Part-of-Speech Tagging with Bilingual Graph-Based Projections](http://www.aclweb.org/anthology/P/P11/P11-1061.pdf).
+* Dipanjan Das and Slav Petrov. [Unsupervised Part-of-Speech Tagging with Bilingual Graph-Based Projections](http://www.aclweb.org/anthology/P/P11/P11-1061.pdf).
 
 
 

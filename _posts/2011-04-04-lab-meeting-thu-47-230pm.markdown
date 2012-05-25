@@ -22,7 +22,7 @@ The reading for discussion will be presented by Baskaran:
 
 
         
-  * Philip Resnik and Eric Hardisty. [Gibbs Sampling for the Uninitiated](http://www.umiacs.umd.edu/~resnik/pubs/gibbs.pdf).
+* Philip Resnik and Eric Hardisty. [Gibbs Sampling for the Uninitiated](http://www.umiacs.umd.edu/~resnik/pubs/gibbs.pdf).
 
 
 

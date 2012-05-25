@@ -15,20 +15,20 @@ Practice talk: Automatic Generation of Multilingual Sports Summaries (Fahim Hasa
 
 
 > Natural Language Generation is a subfield of Natural Language Processing,
-which is concerned with automatically creating human readable text from
-non-linguistic forms of information. A template-based approach to Natural
-Language Generation utilizes base formats for different types of sentences,
-which are subsequently transformed to create the final readable forms of the
-output. In this thesis, we investigate the suitability of a template-based
-approach to multilingual Natural Language Generation of sports summaries. We
-implement a system to generate English and Bangla summaries making use of a
-pipelined architecture to transform data in multiple stages. Additionally,
-we investigate the evaluation of automatically generated summaries, and look
-at how they differ from human generated summaries. We show that by using a
-template-based approach the system can generate acceptable output in
-multiple languages without requiring detailed grammatical knowledge, which
-is important for languages such as Bangla where computational resources are
-still scarce.
+> which is concerned with automatically creating human readable text from
+> non-linguistic forms of information. A template-based approach to Natural
+> Language Generation utilizes base formats for different types of sentences,
+> which are subsequently transformed to create the final readable forms of the
+> output. In this thesis, we investigate the suitability of a template-based
+> approach to multilingual Natural Language Generation of sports summaries. We
+> implement a system to generate English and Bangla summaries making use of a
+> pipelined architecture to transform data in multiple stages. Additionally,
+> we investigate the evaluation of automatically generated summaries, and look
+> at how they differ from human generated summaries. We show that by using a
+> template-based approach the system can generate acceptable output in
+> multiple languages without requiring detailed grammatical knowledge, which
+> is important for languages such as Bangla where computational resources are
+> still scarce.
 
 
 

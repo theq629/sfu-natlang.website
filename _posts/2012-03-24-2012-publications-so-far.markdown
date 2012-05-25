@@ -9,9 +9,6 @@ wordpress_id: '1612'
 
 Our lab has published the following papers in 2012 (so far). Links to camera ready versions to follow.
 
-
-
-
   Bootstrapping via Graph Propagation.
 
       Max Whitney and Anoop Sarkar. In Proceedings of the 50th Annual Meeting of the Association for Computational Linguistics (ACL-2012). July 9-11, 2012. Jeju Island. R. of Korea.
@@ -36,6 +33,3 @@ Our lab has published the following papers in 2012 (so far). Links to camera rea
   Domain Adaptation Techniques for Machine Translation and their Evaluation in a Real-World Setting.
 
       Baskaran Sankaran, Majid Razmara, Atefeh Farzindar, Wael Khreich, Fred Popowich and Anoop Sarkar. In Proceedings of the 25th Canadian Conference on Artificial Intelligence. York University, Ontario. May 28-30, 2012.
-
-
-

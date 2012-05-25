@@ -22,7 +22,7 @@ The reading for discussion will be presented by Majid:
 
 
         
-  * Liang Huang and Haitao Mi. [Efficient Incremental Decoding for Tree-to-String Translation](http://www.isi.edu/~lhuang/inc.pdf).
+* Liang Huang and Haitao Mi. [Efficient Incremental Decoding for Tree-to-String Translation](http://www.isi.edu/~lhuang/inc.pdf).
 
 
 
